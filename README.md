@@ -2,7 +2,7 @@
 
 Este repositório publica a vitrine oficial do universo literário de Nissiel, O Eulírico, separada do repositório técnico autoral.
 
-- Domínio: https://nissieloeulirico.com.br
+- Endereço principal: https://nissieloeulirico.github.io
 - Hospedagem prevista: GitHub Pages
 - Conteúdo arquivado do WordPress: 15 páginas, 38 publicações (incluindo rascunhos) e inventário de 335 arquivos de mídia.
 - Navegação: Início, Acervo, Poemas, Salmos, Narrativas, Bestiário, Escritos, Músicas, Entrelinhas, Raiz, Galeria, Coração e Sobre o Autor.
