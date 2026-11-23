@@ -20,11 +20,8 @@ BASE = "https://nissieloeulirico.wordpress.com"
 DEST = ROOT / "assets" / "wordpress-images"
 ALLOWED_HOST = "nissieloeulirico.wordpress.com"
 
-# Match image URLs in src, srcset, data-orig-file, inline styles and CSS.
 IMAGE_URL = re.compile(
-    r'(?P<url>(?:https?:)?//nissieloeulirico\\.wordpress\\.com/wp-content/uploads/[^\\s"\\'<>),]+?'
-    r'\\.(?:png|jpe?g|webp|gif)(?:\\?[^\\s"\\'<>),]+)?'
-    r'|/wp-content/uploads/[^\\s"\\'<>),]+?\\.(?:png|jpe?g|webp|gif)(?:\\?[^\\s"\\'<>),]+)?)',
+    r"""(?P<url>(?:https?:)?//nissieloeulirico\.wordpress\.com/wp-content/uploads/[^\s"'<>),]+?\.(?:png|jpe?g|webp|gif)(?:\?[^\s"'<>),]+)?|/wp-content/uploads/[^\s"'<>),]+?\.(?:png|jpe?g|webp|gif)(?:\?[^\s"'<>),]+)?)""",
     re.IGNORECASE,
 )
 
@@ -84,11 +81,9 @@ def main() -> None:
         original = file.read_text(encoding="utf-8")
         def replace(match: re.Match[str]) -> str:
             nonlocal rewritten
-            raw = match.group("url")
-            url = canonical_url(raw)
+            url = canonical_url(match.group("url"))
             name = local_name(url)
-            target = DEST / name
-            download(url, target)
+            download(url, DEST / name)
             downloaded.add(name)
             rewritten += 1
             return "/assets/wordpress-images/" + name
