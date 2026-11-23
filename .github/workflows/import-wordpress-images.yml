@@ -1,0 +1,38 @@
+name: Importar imagens do WordPress
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.html'
+      - '**/*.css'
+      - 'scripts/import_wordpress_images.py'
+      - '.github/workflows/import-wordpress-images.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o site
+        uses: actions/checkout@v4
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Copiar imagens usadas no site
+        run: python scripts/import_wordpress_images.py
+      - name: Salvar imagens no repositório
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .
+            git commit -m "Migra imagens utilizadas do WordPress"
+            git push
+          else
+            echo "Nenhuma imagem nova ou referência para atualizar."
+          fi
