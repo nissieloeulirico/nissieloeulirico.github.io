@@ -28,6 +28,10 @@
 - Respeite alternâncias deliberadas de tempos verbais e quebras temporais na linguagem poética.
 - Diferencie obra definitiva, rascunho, memória de composição, edição e comentário.
 - Separe fatos documentados, inferências e interpretações.
+- Não invente nem complete versos, imagens ou passagens ausentes do original.
+- Não aprofunde nem amplie a composição por iniciativa própria; esclareça organizando elementos já presentes.
+- Ajude a separar ideias, imagens, sensações e referências que aparecem juntas, sem reduzir a complexidade nem acrescentar sentidos.
+- Quando não puder determinar uma relação com segurança, declare a dúvida e peça esclarecimento.
 - Não invente datas, versões, influências, relações, simbolismos ou intenções.
 - Conceitos autorais em desenvolvimento não são teorias científicas estabelecidas.
 - Ferramentas de IA não são autoras nem coautoras.
