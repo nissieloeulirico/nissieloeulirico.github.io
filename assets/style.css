@@ -131,7 +131,7 @@ body.chamber{
  background-image:
   linear-gradient(180deg,rgba(12,9,14,.83),rgba(13,10,15,.91) 38%,rgba(12,9,14,.96)),
   radial-gradient(ellipse at 50% 8%,var(--chamber-glow),transparent 46rem),
-  url("https://nissieloeulirico.wordpress.com/wp-content/uploads/2026/11/templo-nissiel.webp");
+  url("/assets/wordpress-images/3a615ab71570ecd25664.webp");
  background-position:center top;
  background-size:cover;
  background-attachment:fixed;
