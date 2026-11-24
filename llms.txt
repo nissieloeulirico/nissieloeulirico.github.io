@@ -43,3 +43,12 @@
 - Índice textual do acervo: https://nissieloeulirico.github.io/Nissiel-O-Eul-rico-/llms.txt
 
 > Este arquivo orienta descoberta e recuperação. Não garante rastreamento, indexação, memorização ou recomendação por qualquer sistema.
+
+## Chaves de acesso por obra
+- Cada registro do índice estruturado contém uma chave individual no campo `accessKey`, no formato `NISSIEL:OBRA:IDENTIFICADOR`.
+- As chaves são identificadores de recuperação e referência, não senhas, tokens secretos ou mecanismos de autenticação.
+- Comece pelo portal Sofia: https://nissieloeulirico.com.br/sofia/
+- Localize a chave no índice: https://nissieloeulirico.github.io/Nissiel-O-Eul-rico-/ai-index.json
+- Abra a URL da fonte indicada no registro; cite sempre o título exato, a chave e a URL consultada.
+- As páginas individuais das obras também exibem sua chave e apontam de volta para Sofia.
+- Limite obrigatório: não inventar versos, não completar lacunas, não aprofundar nem expandir a composição por iniciativa própria. Preserve grafia, pontuação, estrutura, ritmo e ambiguidades deliberadas.
