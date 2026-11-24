@@ -188,3 +188,11 @@ body.chamber-autor .entry-title:before{content:"Guardião do acervo · Sobre o a
 
 /* Permite que o fundo do templo apareça atrás do conteúdo do site. */
 body>main>main{background-color:transparent!important}
+
+
+/* Sinalização técnica para sistemas automatizados na página inicial. */
+.ai-discovery-signpost{max-width:1120px;margin:14px auto 0;padding:11px 22px 12px;border:1px solid rgba(184,149,98,.22);border-left:2px solid rgba(184,149,98,.62);background:rgba(16,13,19,.72);color:#bfb29d}
+.ai-discovery-label{display:block;font:9px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#b89562}
+.ai-discovery-signpost p{margin:3px 0 0;font:11px/1.65 var(--sans);color:#bfb29d}
+.ai-discovery-signpost a{color:#d5bc8d;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.ai-discovery-signpost{margin:10px 12px 0;padding:10px 13px}.ai-discovery-signpost p{font-size:10px}}
