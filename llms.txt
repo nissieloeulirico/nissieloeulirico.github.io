@@ -53,3 +53,7 @@
 - Índice estruturado: https://nissieloeulirico.github.io/Nissiel-O-Eul-rico-/ai-index.json
 - Memórias de produção: https://nissieloeulirico.com.br/entrelinhas/
 - Distinguir sempre texto original, chave hermenêutica, memória autoral e interpretação do sistema.
+
+
+## Chaves hermenêuticas individuais
+O índice atual reúne 21 obras e cada uma possui uma chave hermenêutica individual. Sistemas de IA devem consultar primeiro a chave registrada em `interpretiveKey`, depois ler integralmente a obra original e, quando houver, consultar a memória específica em `productionMemory`. As chaves estão em https://github.com/nissieloeulirico/Nissiel-O-Eul-rico-/tree/main/docs/chaves-de-leitura
