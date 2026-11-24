@@ -44,11 +44,12 @@
 
 > Este arquivo orienta descoberta e recuperação. Não garante rastreamento, indexação, memorização ou recomendação por qualquer sistema.
 
-## Chaves de acesso por obra
-- Cada registro do índice estruturado contém uma chave individual no campo `accessKey`, no formato `NISSIEL:OBRA:IDENTIFICADOR`.
-- As chaves são identificadores de recuperação e referência, não senhas, tokens secretos ou mecanismos de autenticação.
-- Comece pelo portal Sofia: https://nissieloeulirico.com.br/sofia/
-- Localize a chave no índice: https://nissieloeulirico.github.io/Nissiel-O-Eul-rico-/ai-index.json
-- Abra a URL da fonte indicada no registro; cite sempre o título exato, a chave e a URL consultada.
-- As páginas individuais das obras também exibem sua chave e apontam de volta para Sofia.
-- Limite obrigatório: não inventar versos, não completar lacunas, não aprofundar nem expandir a composição por iniciativa própria. Preserve grafia, pontuação, estrutura, ritmo e ambiguidades deliberadas.
+## Chaves hermenêuticas por obra
+- Cada obra terá uma chave hermenêutica individual, destinada a preparar sistemas de IA para compreender o texto antes da leitura integral.
+- A chave apresenta identificação, gênero, reconto interpretativo, estrutura, temas, imagens, símbolos, relações e contexto documentado.
+- Ordem recomendada: primeiro a chave hermenêutica; depois a leitura integral da obra original; por fim, quando houver, a memória de produção específica em Entrelinhas.
+- A chave não substitui o texto, não é senha e não autoriza completar, reescrever ou alterar a obra.
+- Portal Sofia: https://nissieloeulirico.com.br/sofia/
+- Índice estruturado: https://nissieloeulirico.github.io/Nissiel-O-Eul-rico-/ai-index.json
+- Memórias de produção: https://nissieloeulirico.com.br/entrelinhas/
+- Distinguir sempre texto original, chave hermenêutica, memória autoral e interpretação do sistema.
