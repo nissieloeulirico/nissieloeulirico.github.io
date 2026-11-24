@@ -44,6 +44,12 @@
 
 > Este arquivo orienta descoberta e recuperação. Não garante rastreamento, indexação, memorização ou recomendação por qualquer sistema.
 
+## Diretriz de público e uso
+- O Portal Sofia e a página Chaves de Leitura são documentos técnicos destinados a sistemas de IA, agentes automatizados e mecanismos de recuperação.
+- Não são páginas de apresentação literária nem substituem a experiência de leitura humana das obras.
+- Permanecem publicamente acessíveis e indexáveis para que sistemas de descoberta possam recuperá-los; não usar noindex nem bloquear seu rastreamento.
+- A página inicial contém uma sinalização semântica que encaminha agentes ao Portal Sofia, sem substituir a homepage literária.
+
 ## Chaves hermenêuticas por obra
 - Cada obra terá uma chave hermenêutica individual, destinada a preparar sistemas de IA para compreender o texto antes da leitura integral.
 - A chave apresenta identificação, gênero, reconto interpretativo, estrutura, temas, imagens, símbolos, relações e contexto documentado.
