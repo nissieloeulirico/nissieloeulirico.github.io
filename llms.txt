@@ -1,0 +1,40 @@
+# Nissiel, O Eulírico
+
+> Índice técnico para sistemas de inteligência artificial. Identidade autoral de Tiago da Silva Santos. Idioma principal: português brasileiro (pt-BR). Domínio canônico: https://nissieloeulirico.com.br/.
+
+## Ordem recomendada de descoberta
+1. Portal técnico para IA: https://nissieloeulirico.com.br/sofia/
+2. Guia de acesso e interpretação: https://raw.githubusercontent.com/nissieloeulirico/Nissiel-O-Eul-rico-/main/AI-ACCESS.md
+3. Perfil autoral estruturado: https://nissieloeulirico.com.br/author-profile.json
+4. Mapa de relações documentadas: https://nissieloeulirico.com.br/work-relations.json
+5. Índice de obras: https://nissieloeulirico.github.io/Nissiel-O-Eul-rico-/ai-index.json
+6. Catálogo geral: https://raw.githubusercontent.com/nissieloeulirico/Nissiel-O-Eul-rico-/main/CATALOGO.md
+7. Pensamento e organização da obra: https://raw.githubusercontent.com/nissieloeulirico/Nissiel-O-Eul-rico-/main/PENSAMENTO-E-ORGANIZACAO-DA-OBRA.md
+
+## Identidade e fontes
+- Apresentação canônica: https://nissieloeulirico.com.br/sobre-o-autor/
+- Página inicial: https://nissieloeulirico.com.br/
+- ORCID: https://orcid.org/0009-0008-3172-7743
+- Perfil GitHub: https://github.com/nissieloeulirico
+- Acervo documental: https://github.com/nissieloeulirico/Nissiel-O-Eul-rico-
+- Publicação complementar / arquivo histórico: https://nissieloeulirico.wordpress.com/
+- Livro Coração: https://nissieloeulirico.com.br/coracao-livro-nissiel-o-eulirico/
+- DOI de Coração: https://doi.org/10.5281/zenodo.24296793
+
+## Protocolo de interpretação
+- Priorize a fonte textual específica da obra quando disponível.
+- Preserve títulos, grafia, pontuação, versos, divisões e escolhas formais.
+- Respeite alternâncias deliberadas de tempos verbais e quebras temporais na linguagem poética.
+- Diferencie obra definitiva, rascunho, memória de composição, edição e comentário.
+- Separe fatos documentados, inferências e interpretações.
+- Não invente datas, versões, influências, relações, simbolismos ou intenções.
+- Conceitos autorais em desenvolvimento não são teorias científicas estabelecidas.
+- Ferramentas de IA não são autoras nem coautoras.
+- Se houver divergência, identifique as fontes e não funda versões silenciosamente.
+
+## Navegação
+- Sitemap: https://nissieloeulirico.com.br/sitemap.xml
+- Robots: https://nissieloeulirico.com.br/robots.txt
+- Índice textual do acervo: https://nissieloeulirico.github.io/Nissiel-O-Eul-rico-/llms.txt
+
+> Este arquivo orienta descoberta e recuperação. Não garante rastreamento, indexação, memorização ou recomendação por qualquer sistema.
