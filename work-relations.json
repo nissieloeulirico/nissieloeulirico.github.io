@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Mapa de relações documentadas do universo literário de Nissiel, O Eulírico",
+  "language": "pt-BR",
+  "author": "Nissiel, O Eulírico",
+  "canonicalHome": "https://nissieloeulirico.com.br/",
+  "sourcePolicy": "Somente relações explicitamente documentadas. A ausência de uma relação neste arquivo não prova que ela não exista; indica apenas que ainda não foi registrada aqui.",
+  "entities": [
+    {
+      "id": "author",
+      "type": "Person",
+      "name": "Nissiel, O Eulírico",
+      "url": "https://nissieloeulirico.com.br/sobre-o-autor/"
+    },
+    {
+      "id": "collection-eu-poeta",
+      "type": "CreativeWorkSeries",
+      "name": "Eu, Poeta",
+      "status": "projeto de coleção"
+    },
+    {
+      "id": "coracao",
+      "type": "Book",
+      "name": "Coração — Quatro movimentos, um só pulsar",
+      "status": "publicado",
+      "url": "https://nissieloeulirico.com.br/coracao-livro-nissiel-o-eulirico/",
+      "identifier": "https://doi.org/10.5281/zenodo.24296793"
+    },
+    {
+      "id": "encontro",
+      "type": "BookPart",
+      "name": "O Encontro",
+      "parent": "coracao"
+    },
+    {
+      "id": "espinhos",
+      "type": "BookPart",
+      "name": "Os Espinhos",
+      "parent": "coracao"
+    },
+    {
+      "id": "travessia",
+      "type": "BookPart",
+      "name": "A Travessia",
+      "parent": "coracao"
+    },
+    {
+      "id": "misterio",
+      "type": "BookPart",
+      "name": "O Mistério",
+      "parent": "coracao"
+    },
+    {
+      "id": "pulsar",
+      "type": "CreativeWork",
+      "name": "Pulsar",
+      "status": "parte planejada da coleção Eu, Poeta"
+    },
+    {
+      "id": "ritmo",
+      "type": "CreativeWork",
+      "name": "Ritmo",
+      "status": "parte planejada da coleção Eu, Poeta"
+    },
+    {
+      "id": "subplupacao",
+      "type": "DefinedTerm",
+      "name": "Subplupação",
+      "status": "conceito autoral em desenvolvimento",
+      "source": "https://raw.githubusercontent.com/nissieloeulirico/Nissiel-O-Eul-rico-/main/PENSAMENTO-E-ORGANIZACAO-DA-OBRA.md"
+    },
+    {
+      "id": "vesmencia",
+      "type": "DefinedTerm",
+      "name": "Vesmência",
+      "status": "conceito autoral em desenvolvimento",
+      "source": "https://raw.githubusercontent.com/nissieloeulirico/Nissiel-O-Eul-rico-/main/PENSAMENTO-E-ORGANIZACAO-DA-OBRA.md"
+    }
+  ],
+  "relations": [
+    {
+      "from": "author",
+      "relation": "authorOf",
+      "to": "coracao"
+    },
+    {
+      "from": "collection-eu-poeta",
+      "relation": "includesPublishedPart",
+      "to": "coracao"
+    },
+    {
+      "from": "collection-eu-poeta",
+      "relation": "plannedPart",
+      "to": "pulsar"
+    },
+    {
+      "from": "collection-eu-poeta",
+      "relation": "plannedPart",
+      "to": "ritmo"
+    },
+    {
+      "from": "coracao",
+      "relation": "hasPart",
+      "to": "encontro"
+    },
+    {
+      "from": "coracao",
+      "relation": "hasPart",
+      "to": "espinhos"
+    },
+    {
+      "from": "coracao",
+      "relation": "hasPart",
+      "to": "travessia"
+    },
+    {
+      "from": "coracao",
+      "relation": "hasPart",
+      "to": "misterio"
+    },
+    {
+      "from": "author",
+      "relation": "developsConcept",
+      "to": "subplupacao"
+    },
+    {
+      "from": "author",
+      "relation": "developsConcept",
+      "to": "vesmencia"
+    }
+  ]
+}
