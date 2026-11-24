@@ -121,3 +121,67 @@ body>main>main>.wp-block-cover:first-child:after{
  .archive-list{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Câmaras do templo: cada núcleo tem sua própria luz, sem romper a unidade. */
+body.chamber{
+ --chamber-accent:#c6a875;
+ --chamber-glow:rgba(150,112,76,.18);
+ background-color:#100d13;
+ background-image:
+  linear-gradient(180deg,rgba(12,9,14,.83),rgba(13,10,15,.91) 38%,rgba(12,9,14,.96)),
+  radial-gradient(ellipse at 50% 8%,var(--chamber-glow),transparent 46rem),
+  url("https://nissieloeulirico.wordpress.com/wp-content/uploads/2026/11/templo-nissiel.webp");
+ background-position:center top;
+ background-size:cover;
+ background-attachment:fixed;
+}
+body.chamber .site-content{max-width:1080px;padding-top:76px}
+body.chamber .entry-title{color:#f1e6d3}
+body.chamber .entry-title:before{
+ display:block;margin:0 0 17px;
+ color:var(--chamber-accent);font:10px var(--sans);
+ letter-spacing:.24em;text-transform:uppercase;
+}
+body.chamber .entry-content h2,
+body.chamber .entry-content h3{color:var(--chamber-accent)}
+body.chamber .entry-content a{border-bottom:1px solid rgba(198,168,117,.32)}
+body.chamber .wp-block-group[style*="background-color"],
+body.chamber .archive-card{
+ border-color:color-mix(in srgb,var(--chamber-accent) 30%,transparent);
+ box-shadow:0 18px 46px rgba(0,0,0,.18);
+}
+body.chamber .wp-block-separator{border-color:color-mix(in srgb,var(--chamber-accent) 45%,transparent)}
+body.chamber .entry-content blockquote{
+ border-left-color:var(--chamber-accent);
+ background:linear-gradient(90deg,var(--chamber-glow),transparent);
+}
+body.chamber-acervo{--chamber-accent:#d0b47f;--chamber-glow:rgba(172,133,82,.22)}
+body.chamber-acervo .entry-title:before{content:"Nave central · Biblioteca"}
+body.chamber-poemas{--chamber-accent:#d4b28a;--chamber-glow:rgba(151,94,105,.19)}
+body.chamber-poemas .entry-title:before{content:"Capela das palavras · O verbo em verso"}
+body.chamber-salmos{--chamber-accent:#c9bd91;--chamber-glow:rgba(128,133,112,.20)}
+body.chamber-salmos .entry-title:before{content:"Santuário · Diálogo com o sagrado"}
+body.chamber-narrativas{--chamber-accent:#bd9b70;--chamber-glow:rgba(105,78,55,.22)}
+body.chamber-narrativas .entry-title:before{content:"Galeria das travessias · Histórias"}
+body.chamber-bestiario{--chamber-accent:#aeb58a;--chamber-glow:rgba(87,111,81,.19)}
+body.chamber-bestiario .entry-title:before{content:"Cripta naturalista · Formas do imaginário"}
+body.chamber-escritos{--chamber-accent:#b6a5c6;--chamber-glow:rgba(106,83,132,.20)}
+body.chamber-escritos .entry-title:before{content:"Scriptorium · Pensamento e registro"}
+body.chamber-musicas{--chamber-accent:#c5a0b2;--chamber-glow:rgba(132,77,111,.20)}
+body.chamber-musicas .entry-title:before{content:"Câmara de ressonância · Palavra e som"}
+body.chamber-entrelinhas{--chamber-accent:#c6a6a0;--chamber-glow:rgba(128,76,78,.22)}
+body.chamber-entrelinhas .entry-title:before{content:"Passagem reservada · Memórias de composição"}
+body.chamber-raiz{--chamber-accent:#b99a78;--chamber-glow:rgba(117,83,52,.24)}
+body.chamber-raiz .entry-title:before{content:"Fundação antiga · Vestígios e origens"}
+body.chamber-galeria{--chamber-accent:#c7b6a0;--chamber-glow:rgba(126,109,91,.20)}
+body.chamber-galeria .entry-title:before{content:"Pinacoteca · Imagens e símbolos"}
+body.chamber-coracao{--chamber-accent:#d4a0a0;--chamber-glow:rgba(133,60,75,.23)}
+body.chamber-coracao .entry-title:before{content:"Relicário · A primeira obra"}
+body.chamber-autor{--chamber-accent:#c9b58d;--chamber-glow:rgba(129,111,74,.20)}
+body.chamber-autor .entry-title:before{content:"Guardião do acervo · Sobre o autor"}
+@media(max-width:700px){
+ body.chamber{background-attachment:scroll;background-position:center top}
+ body.chamber .site-content{padding-top:48px}
+ body.chamber .entry-title:before{font-size:9px;letter-spacing:.17em}
+}
