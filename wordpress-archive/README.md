@@ -1,8 +1,12 @@
-# Arquivo de origem do WordPress
+# Arquivo histórico de origem do WordPress
 
-Fonte: https://nissieloeulirico.wordpress.com
+**Identidade e endereço oficial atual:** https://nissieloeulirico.com.br/
 
-Este diretório preserva o conteúdo exportado do WordPress, mantendo a marcação Gutenberg original e os metadados de origem.
+Este diretório preserva uma cópia documental do conteúdo que foi publicado no WordPress. O endereço WordPress abaixo é mantido exclusivamente como referência histórica da origem dos dados e dos endereços de mídia, não como raiz da identidade autoral:
+
+Fonte histórica: https://nissieloeulirico.wordpress.com
+
+O site oficial atual é a raiz de apresentação e navegação de Nissiel, O Eulírico. Este arquivo é uma ramificação de preservação técnica, útil para rastreabilidade, comparação de versões e recuperação do conteúdo original.
 
 ## Conteúdo preservado
 
@@ -20,4 +24,4 @@ Este diretório preserva o conteúdo exportado do WordPress, mantendo a marcaç�
 
 O inventário registra os 335 arquivos e seus endereços originais. Os binários (imagens, áudio, vídeo e documentos) continuam hospedados no WordPress; eles ainda não foram copiados fisicamente para este repositório. As páginas públicas existentes podem continuar usando os endereços originais enquanto essa etapa não é concluída.
 
-O conteúdo arquivado é uma cópia documental. O WordPress permanece como fonte original durante a transição.
+**Preservação não significa redirecionamento:** os registros de origem são mantidos para documentar a procedência do material. Para encontrar o autor, conhecer as obras e navegar pelo acervo atualizado, utilize sempre o domínio oficial acima.
