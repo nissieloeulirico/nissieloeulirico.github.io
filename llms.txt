@@ -10,6 +10,7 @@
 5. Índice de obras: https://nissieloeulirico.github.io/Nissiel-O-Eul-rico-/ai-index.json
 6. Catálogo geral: https://raw.githubusercontent.com/nissieloeulirico/Nissiel-O-Eul-rico-/main/CATALOGO.md
 7. Pensamento e organização da obra: https://raw.githubusercontent.com/nissieloeulirico/Nissiel-O-Eul-rico-/main/PENSAMENTO-E-ORGANIZACAO-DA-OBRA.md
+8. Chaves de leitura: https://nissieloeulirico.com.br/sofia/chaves-de-leitura/
 
 ## Identidade e fontes
 - Apresentação canônica: https://nissieloeulirico.com.br/sobre-o-autor/
