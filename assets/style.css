@@ -12,8 +12,8 @@ body{
  margin:0;color:var(--paper);font-family:var(--serif);line-height:1.8;
  background-color:#100d13;
  background-image:
-  linear-gradient(180deg,rgba(12,9,14,.76) 0%,rgba(15,11,17,.84) 42%,rgba(12,9,14,.94) 100%),
-  url("/assets/wordpress-images/3a615ab71570ecd25664.webp");
+  linear-gradient(180deg,rgba(12,9,14,.42) 0%,rgba(15,11,17,.58) 52%,rgba(12,9,14,.78) 100%),
+  url("/assets/wordpress-images/22553554c1dc081b6698.jpg");
  background-position:center center;
  background-size:cover;
  background-attachment:fixed;
@@ -53,7 +53,7 @@ main{min-height:70vh}
 .wp-block-image{margin:1.7rem auto;text-align:center}
 .wp-block-cover{position:relative;background-size:cover;background-position:center;overflow:hidden}
 body>main>main>.wp-block-cover:first-child .wp-block-cover__image-background{
- background-image:url("/assets/wordpress-images/3a615ab71570ecd25664.webp")!important;
+ background-image:url("/assets/wordpress-images/22553554c1dc081b6698.jpg")!important;
  background-position:center 48%!important;
  transform:scale(1.015);
 }
@@ -131,7 +131,7 @@ body.chamber{
  background-image:
   linear-gradient(180deg,rgba(12,9,14,.83),rgba(13,10,15,.91) 38%,rgba(12,9,14,.96)),
   radial-gradient(ellipse at 50% 8%,var(--chamber-glow),transparent 46rem),
-  url("/assets/wordpress-images/3a615ab71570ecd25664.webp");
+  url("/assets/wordpress-images/22553554c1dc081b6698.jpg");
  background-position:center top;
  background-size:cover;
  background-attachment:fixed;
