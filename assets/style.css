@@ -203,4 +203,14 @@ body>main>main>.wp-block-cover:first-child .wp-block-cover__image-background{dis
 body>main>main>.wp-block-cover:first-child:after{background:linear-gradient(180deg,rgba(10,7,12,.06),rgba(10,7,12,.18) 68%,#100d13 100%)}
 .temple-intro-image{max-width:920px;margin:2rem auto 2.4rem}
 .temple-intro-image img{display:block;width:100%;max-height:520px;object-fit:cover}
-.site-footer .footer-emblem{display:block;width:clamp(110px,18vw,165px);height:auto;margin:0 auto 18px;filter:drop-shadow(0 8px 24px rgba(0,0,0,.42));border:0;box-shadow:none}
+/* O emblema perde o retângulo escuro e passa a respirar junto ao fundo. */
+.site-footer .footer-emblem{
+ display:block;width:clamp(125px,19vw,180px);height:auto;
+ margin:0 auto 8px;padding:0;
+ mix-blend-mode:screen;opacity:.88;
+ filter:drop-shadow(0 0 15px rgba(213,188,141,.16));
+ border:0!important;outline:0;box-shadow:none!important;
+ background:transparent;
+}
+.site-footer .foot-title{position:relative;margin-top:0}
+.site-footer>p,.site-footer>.foot-title{position:relative;z-index:1}
