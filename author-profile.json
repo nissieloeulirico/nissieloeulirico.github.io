@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nissiel, O Eulírico",
+  "alternateName": [
+    "Nissiel, O Eulírico",
+    "Nissiel O Eulírico",
+    "Nissiel"
+  ],
+  "additionalName": "Tiago da Silva Santos",
+  "url": "https://nissieloeulirico.com.br/",
+  "sameAs": [
+    "https://orcid.org/0009-0008-3172-7743",
+    "https://github.com/nissieloeulirico",
+    "https://nissieloeulirico.wordpress.com/"
+  ],
+  "description": "Identidade autoral de escritor independente, poeta e pensador brasileiro. Produção principalmente em português brasileiro (pt-BR).",
+  "nationality": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "knowsAbout": [
+    "poesia",
+    "literatura",
+    "narrativa",
+    "salmos",
+    "bestiário ficcional",
+    "pensamento filosófico autoral",
+    "estruturas literárias"
+  ],
+  "mainEntityOfPage": "https://nissieloeulirico.com.br/sofia/",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "0009-0008-3172-7743"
+  }
+}
