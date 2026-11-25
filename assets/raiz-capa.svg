@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="t d">
+<title id="t">Raiz — árvore ancestral</title><desc id="d">Uma árvore antiga de copa ampla e raízes profundas, iluminada por um sol dourado, dentro de uma moldura ornamental.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#172018"/><stop offset=".55" stop-color="#3b3922"/><stop offset="1" stop-color="#100e12"/></linearGradient>
+ <radialGradient id="sun"><stop stop-color="#fff4c7"/><stop offset=".22" stop-color="#f5d88c" stop-opacity=".8"/><stop offset="1" stop-color="#d49a3d" stop-opacity="0"/></radialGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#fff0b5"/><stop offset=".5" stop-color="#bd8738"/><stop offset="1" stop-color="#69431d"/></linearGradient>
+ <linearGradient id="wood" x2="1" y2="0"><stop stop-color="#24180f"/><stop offset=".5" stop-color="#79512b"/><stop offset="1" stop-color="#24180f"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="24"/></filter>
+</defs>
+<rect width="900" height="1200" fill="url(#bg)"/>
+<circle cx="440" cy="310" r="260" fill="url(#sun)" filter="url(#glow)"/><circle cx="440" cy="310" r="160" fill="url(#sun)"/>
+<g fill="#172719" stroke="#5a522d" stroke-width="4">
+ <path d="M40 360Q90 80 310 125Q380 15 520 100Q700 25 850 220Q900 330 820 420Q650 365 560 420Q420 480 280 410Q120 470 40 360Z"/>
+ <path d="M125 255Q130 110 270 95Q370 45 440 145Q535 40 660 120Q800 120 820 280Q700 345 590 300Q450 390 330 310Q210 365 125 255Z"/>
+</g>
+<g fill="none" stroke="#8d6935" stroke-width="12" stroke-linecap="round">
+ <path d="M455 805Q430 620 450 430Q410 300 270 230M450 470Q500 320 670 220M445 560Q330 420 170 405M465 570Q610 420 790 410M450 670Q570 555 740 560"/>
+ <path d="M455 790Q350 870 210 940Q145 1000 80 1020M455 790Q360 900 330 1060M455 790Q500 900 585 1060M455 790Q620 880 810 1005M455 790Q700 850 860 900"/>
+</g>
+<path d="M390 825Q415 660 405 520Q390 390 445 270Q500 400 490 535Q480 680 520 825Z" fill="url(#wood)" stroke="#bd8c4a" stroke-width="5"/>
+<g fill="none" stroke="#c18b48" stroke-width="5" stroke-linecap="round">
+ <path d="M420 790Q330 870 180 910M435 800Q380 900 365 1050M485 800Q550 900 590 1040M500 790Q650 875 800 970M415 690Q350 620 300 560M490 610Q570 540 650 500"/>
+ <path d="M410 520Q385 410 315 350M475 430Q550 340 620 300M445 360Q440 270 460 205"/>
+</g>
+<g fill="#293a25" stroke="#8b7139" stroke-width="3">
+ <ellipse cx="190" cy="260" rx="105" ry="58"/><ellipse cx="310" cy="170" rx="125" ry="68"/><ellipse cx="480" cy="145" rx="120" ry="70"/><ellipse cx="650" cy="190" rx="130" ry="72"/><ellipse cx="760" cy="300" rx="100" ry="62"/><ellipse cx="310" cy="330" rx="110" ry="60"/><ellipse cx="610" cy="340" rx="120" ry="65"/>
+</g>
+<g fill="#d7b66b" opacity=".7"><circle cx="175" cy="215" r="5"/><circle cx="285" cy="132" r="4"/><circle cx="505" cy="110" r="5"/><circle cx="680" cy="170" r="4"/><circle cx="755" cy="285" r="5"/><circle cx="595" cy="315" r="4"/></g>
+<path d="M0 1060Q180 1000 330 1060T620 1050T900 1040V1200H0Z" fill="#100e12" opacity=".92"/>
+<rect x="24" y="24" width="852" height="1152" rx="8" fill="none" stroke="url(#gold)" stroke-width="5"/>
+<rect x="40" y="40" width="820" height="1120" rx="5" fill="none" stroke="#8f672e" stroke-width="1.5"/>
+<g fill="url(#gold)" stroke="#6d4a22" stroke-width="2"><path d="M450 16l18 32-18 32-18-32Z"/><path d="M450 1120l18 32-18 32-18-32Z"/><path d="M24 600l30-18 30 18-30 18Z"/><path d="M816 600l30-18 30 18-30 18Z"/></g>
+<path d="M130 1080Q450 1025 770 1080L740 1150H160Z" fill="#171018" stroke="url(#gold)" stroke-width="5"/>
+<text x="450" y="1127" text-anchor="middle" font-family="Georgia,serif" font-size="76" letter-spacing="12" fill="#e8c27b" stroke="#593a1d" stroke-width="1">RAIZ</text>
+</svg>
