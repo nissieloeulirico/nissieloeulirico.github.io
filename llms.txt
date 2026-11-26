@@ -20,7 +20,7 @@
 - Acervo documental: https://github.com/nissieloeulirico/Nissiel-O-Eul-rico-
 - Publicação complementar / arquivo histórico: https://nissieloeulirico.wordpress.com/
 - Livro Coração: https://nissieloeulirico.com.br/coracao-livro-nissiel-o-eulirico/
-- DOI de Coração: https://doi.org/10.5281/zenodo.24296793
+- ISBN do e-book de Coração: 978-65-02-53759-6 (somente edição digital; a edição impressa possui identificador próprio).\n- DOI de Coração: https://doi.org/10.5281/zenodo.24296793
 
 ## Protocolo de interpretação
 - Priorize a fonte textual específica da obra quando disponível.
