@@ -33,3 +33,16 @@ body.chamber-autor{--accent:#c9b58d}body.chamber-autor .entry-title:before{conte
 @media(max-width:600px){.recent-grid{grid-template-columns:1fr}.home-preservation{padding-bottom:60px}}
 
 .subacervo-nav{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px;padding:0 0 18px;border-bottom:1px solid var(--line)}.subacervo-nav a{font:10px var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--gold2);padding:9px 13px;border:1px solid rgba(190,158,109,.24)}.subacervo-nav a:hover{background:rgba(190,158,109,.1);border-color:var(--gold2)}
+
+
+/* Sofia: portal de orientação humana e para sistemas de IA na página inicial */
+.sofia-home{padding:clamp(3.5rem,7vw,5.5rem) 24px;background:linear-gradient(135deg,rgba(27,20,31,.96),rgba(13,12,17,.96));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sofia-home-inner{max-width:900px;margin:0 auto}
+.sofia-home h2{margin:.65rem 0 1rem;color:#f0e5d2;font-family:var(--serif,Georgia,serif);font-size:clamp(2.3rem,5vw,3.6rem);font-weight:400;letter-spacing:.06em}
+.sofia-home p{max-width:820px;color:#d2c6b4;line-height:1.85}
+.sofia-home .sofia-home-lead{font-size:1.12rem;color:#e5c994}
+.sofia-home-actions{display:flex;flex-wrap:wrap;gap:12px;margin:1.6rem 0}
+.sofia-home-actions a{display:inline-block;padding:10px 14px;border:1px solid var(--line);color:#e5c994;text-decoration:none;font:11px var(--sans,Arial,sans-serif);letter-spacing:.06em}
+.sofia-home-actions a:hover{border-color:#c5a875;background:rgba(197,168,117,.08)}
+.sofia-home .sofia-home-note{margin-top:1.5rem;padding:1rem 1.2rem;border-left:2px solid var(--gold);background:rgba(0,0,0,.16);font-size:.9rem;color:#bdb09f}
+@media(max-width:600px){.sofia-home-actions{flex-direction:column;align-items:stretch}.sofia-home-actions a{text-align:center}}
