@@ -1,216 +1,30 @@
-/* Nissiel, O Eulírico — Sacro gótico contemplativo */
-:root{
- --ink:#17131a;--night:#100d13;--night-2:#18121b;--wine:#30202b;
- --paper:#e9dfce;--paper-soft:#cfc2ae;--gold:#b89562;--gold-bright:#d5bc8d;
- --muted:#a99c8b;--line:rgba(190,158,109,.24);
- --serif:Georgia,"Times New Roman",serif;
- --sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:110px}
-body{
- margin:0;color:var(--paper);font-family:var(--serif);line-height:1.8;
- background-color:#100d13;
- background-image:
-  radial-gradient(ellipse at 50% 0%,rgba(91,65,77,.16),transparent 52rem),
-  linear-gradient(180deg,#100d13 0%,#151019 55%,#100d13 100%);
- background-position:center top;
- background-size:cover;
- background-attachment:fixed;
-}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.16;
- background-image:radial-gradient(rgba(231,214,182,.22) .55px,transparent .7px);background-size:5px 5px}
-a{color:var(--gold-bright);text-decoration:none;transition:color .2s ease,border-color .2s ease,background .2s ease}
-a:hover{color:#fff1d6;text-decoration:none}
-.site-header{
- position:sticky;top:0;z-index:30;
- background:rgba(16,13,19,.94);backdrop-filter:blur(16px);
- border-bottom:1px solid var(--line);box-shadow:0 8px 28px rgba(0,0,0,.18)
-}
-.header-inner{max-width:1320px;margin:auto;padding:13px 30px 11px;display:flex;align-items:center;gap:28px}
-.brand{display:flex;align-items:center;gap:13px;color:var(--paper);min-width:235px;flex-shrink:0}
-.brand-mark{
- width:42px;height:42px;border:1px solid rgba(213,188,141,.72);border-radius:50%;
- display:grid;place-items:center;color:var(--gold-bright);font-size:20px;
- box-shadow:inset 0 0 18px rgba(184,149,94,.10),0 0 18px rgba(184,149,94,.08)
-}
-.brand-name{font-size:14px;letter-spacing:.13em;text-transform:uppercase;line-height:1.35}
-.brand-sub{font:9px var(--sans);letter-spacing:.25em;color:var(--gold);text-transform:uppercase}
-.main-nav{display:flex;flex:1;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:3px 15px}
-.main-nav a{font:10px var(--sans);letter-spacing:.105em;text-transform:uppercase;color:#d2c6b4;padding:8px 0 7px;border-bottom:1px solid transparent;white-space:nowrap}
-.main-nav a:hover,.main-nav a:focus-visible{color:var(--gold-bright);border-color:var(--gold)}
-.mobile-note{display:none}
-main{min-height:70vh}
-.site-content{max-width:1060px;margin:0 auto;padding:58px 30px 92px}
-.site-content>h1:first-child,.entry-title{font-size:clamp(2.35rem,5vw,4.4rem);font-weight:400;line-height:1.08;letter-spacing:-.025em;color:#f0e5d2;margin:0 0 30px}
-.entry-title:after,.site-content>h1:first-child:after{content:"";display:block;width:74px;height:1px;margin-top:22px;background:linear-gradient(90deg,var(--gold),transparent)}
-.crumb{font:10px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
-.wp-block-group,.wp-block-cover,.wp-block-columns,.wp-block-query{max-width:100%}
-.wp-block-group{margin-left:auto;margin-right:auto}
-.wp-block-heading{font-weight:400;line-height:1.2;letter-spacing:-.015em}
-.wp-block-paragraph{line-height:1.9}
-.wp-block-image img{max-width:100%;height:auto;border:1px solid rgba(190,158,109,.30);box-shadow:0 18px 50px rgba(0,0,0,.25)}
-.wp-block-image{margin:1.7rem auto;text-align:center}
-.wp-block-cover{position:relative;background-size:cover;background-position:center;overflow:hidden}
-body>main>main>.wp-block-cover:first-child .wp-block-cover__image-background{
- background-image:url("/assets/wordpress-images/templo-fundo.jpg")!important;
- background-position:center 48%!important;
- transform:scale(1.015);
-}
-body>main>main>.wp-block-cover:first-child:after{
- background:linear-gradient(180deg,rgba(10,7,12,.28) 0%,rgba(10,7,12,.38) 48%,#100d13 100%);
-}
-.site-content{position:relative}
-.site-content:before{
- content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
- background:linear-gradient(90deg,rgba(13,10,15,.34),rgba(19,14,20,.56) 50%,rgba(13,10,15,.34));
- border-left:1px solid rgba(190,158,109,.08);border-right:1px solid rgba(190,158,109,.08);
-}
-.wp-block-cover:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(12,9,14,.12),rgba(12,9,14,.18) 55%,#100d13 100%);z-index:0}
-.wp-block-cover__inner-container{position:relative;z-index:1}
-.wp-block-button__link{display:inline-block;padding:14px 25px;background:linear-gradient(135deg,#c4a16a,#9c7747);color:#171018!important;text-transform:uppercase;letter-spacing:.12em;font:10px var(--sans);border:1px solid rgba(230,207,164,.48);border-radius:2px;box-shadow:0 8px 24px rgba(0,0,0,.18);transition:transform .2s ease,filter .2s ease}
-.wp-block-button__link:hover{filter:brightness(1.12);transform:translateY(-2px)}
-.wp-block-columns{display:flex;gap:20px;flex-wrap:wrap}
-.wp-block-column{flex:1 1 230px;min-width:0}
-.wp-block-post-template{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.wp-block-post-template>li{list-style:none}
-.wp-block-group[style*="background-color"]{border-color:var(--line)}
-.wp-block-separator{border:0;border-top:1px solid var(--line);max-width:130px;margin:2.5rem auto}
-.entry-content{color:#e2d8c8;font-size:1.06rem}
-.entry-content p{margin:1.15em 0;max-width:78ch}
-.entry-content h2,.entry-content h3{color:#e1c99f;margin:2em 0 .65em}
-.entry-content h2{font-size:clamp(1.55rem,3vw,2.15rem)}
-.entry-content blockquote{border-left:2px solid var(--gold);margin:2.2rem 0;padding:.55rem 1.4rem;color:#d4c5ae;font-style:italic;background:linear-gradient(90deg,rgba(184,149,94,.07),transparent)}
-.entry-content img{max-width:100%;height:auto}
-.entry-content iframe{max-width:100%}
-.entry-content table{border-collapse:collapse;width:100%}
-.entry-content td,.entry-content th{border:1px solid var(--line);padding:10px}
-.archive-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin:2.2rem 0}
-.archive-card{position:relative;background:linear-gradient(145deg,rgba(42,30,40,.94),rgba(23,18,27,.96));border:1px solid var(--line);border-top:1px solid rgba(213,188,141,.65);padding:24px;min-height:165px;box-shadow:0 14px 36px rgba(0,0,0,.14);transition:transform .22s ease,border-color .22s ease}
-.archive-card:hover{transform:translateY(-3px);border-color:rgba(213,188,141,.55)}
-.archive-card small{font:9px var(--sans);letter-spacing:.16em;color:var(--gold);text-transform:uppercase}
-.archive-card h3{font-size:1.3rem;font-weight:400;line-height:1.3;margin:.6rem 0}
-.archive-card p{font:13px var(--sans);color:var(--muted);line-height:1.7}
-.site-footer{border-top:1px solid var(--line);background:linear-gradient(180deg,#17121b,#100d13);padding:48px 24px 38px;text-align:center;color:#bfb29d;position:relative}
-.site-footer:before{content:"✦";display:block;color:var(--gold);font-size:17px;margin:0 auto 12px}
-.site-footer .foot-title{color:var(--gold-bright);letter-spacing:.18em;text-transform:uppercase;font-size:13px}
-.site-footer p{font:11px var(--sans);line-height:1.9}
-.site-footer a{color:#d2b987}
-:focus-visible{outline:2px solid var(--gold-bright);outline-offset:4px}
-@media(max-width:980px){
- .header-inner{display:block;padding:12px 20px}
- .brand{margin:0 auto 12px;justify-content:center}
- .main-nav{justify-content:center;gap:3px 13px}
- .main-nav a{font-size:9px}
-}
-@media(max-width:600px){
- .header-inner{padding:11px 14px 9px}
- .brand{justify-content:flex-start;margin-bottom:9px;min-width:0}
- .brand-mark{width:36px;height:36px}
- .brand-name{font-size:12px}
- .main-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;gap:0 16px;padding:2px 0 8px;scrollbar-width:thin}
- .main-nav a{font-size:9px;flex:0 0 auto}
- .mobile-note{display:block;color:var(--gold);font:9px var(--sans);letter-spacing:.12em;text-transform:uppercase;margin-top:5px}
- .site-content{padding:38px 19px 66px}
- .wp-block-columns{display:block}
- .wp-block-column{margin:15px 0}
- .wp-block-cover{min-height:600px!important}
- body{background-attachment:scroll;background-position:center top}
- body>main>main>.wp-block-cover:first-child .wp-block-cover__image-background{background-position:center center!important}
- .entry-content{font-size:1rem}
- .archive-list{grid-template-columns:1fr}
-}
+:root{--ink:#17131a;--night:#100d13;--paper:#e9dfce;--gold:#b89562;--gold2:#d5bc8d;--muted:#a99c8b;--line:rgba(190,158,109,.24);--serif:Georgia,"Times New Roman",serif;--sans:system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:#100d13;color:var(--paper);font:16px/1.85 var(--serif);background-image:radial-gradient(ellipse at 50% 0%,rgba(91,65,77,.16),transparent 52rem),linear-gradient(180deg,#100d13,#151019 55%,#100d13);background-attachment:fixed}body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.12;background-image:radial-gradient(rgba(231,214,182,.22) .55px,transparent .7px);background-size:5px 5px}
+a{color:var(--gold2);text-decoration:none;transition:.2s}a:hover{color:#fff1d6}
+.site-header{position:sticky;top:0;z-index:30;background:rgba(16,13,19,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.header-inner{max-width:1400px;margin:auto;padding:13px 28px;display:flex;align-items:center;gap:30px}.brand{display:flex;align-items:center;gap:12px;color:var(--paper);min-width:230px}.brand-mark{width:42px;height:42px;border:1px solid var(--gold2);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-size:20px}.brand-name{font-size:13px;letter-spacing:.13em;text-transform:uppercase;line-height:1.35}.brand-sub{font:9px var(--sans);letter-spacing:.25em;color:var(--gold);text-transform:uppercase}.main-nav{display:flex;flex:1;justify-content:flex-end;align-items:center;gap:5px 22px;flex-wrap:wrap}.main-nav a{font:10px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#d2c6b4;padding:8px 0;border-bottom:1px solid transparent;white-space:nowrap}.main-nav a:hover{color:var(--gold2);border-color:var(--gold)}.mobile-note{display:none}
+main{min-height:70vh}.site-content{max-width:1080px;margin:0 auto;padding:65px 30px 95px;position:relative}.entry-title,.site-content>h1:first-child{font-size:clamp(2.4rem,5vw,4.5rem);font-weight:400;line-height:1.08;color:#f0e5d2;margin:0 0 30px;letter-spacing:-.025em}.entry-title:after,.site-content>h1:first-child:after{content:"";display:block;width:74px;height:1px;margin-top:22px;background:linear-gradient(90deg,var(--gold),transparent)}.crumb{font:10px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}.entry-content{color:#e2d8c8;font-size:1.04rem}.entry-content p{margin:1.15em 0;max-width:78ch}.entry-content h2,.entry-content h3{color:#e1c99f;font-weight:400;line-height:1.2;margin:2em 0 .65em}.entry-content h2{font-size:clamp(1.6rem,3vw,2.2rem)}.entry-content blockquote{border-left:2px solid var(--gold);margin:2.2rem 0;padding:.55rem 1.4rem;color:#d4c5ae;font-style:italic;background:linear-gradient(90deg,rgba(184,149,94,.07),transparent)}.entry-content img{max-width:100%;height:auto}.entry-content iframe{max-width:100%}.entry-content table{border-collapse:collapse;width:100%}.entry-content td,.entry-content th{border:1px solid var(--line);padding:10px}
+.wp-block-group,.wp-block-cover,.wp-block-columns,.wp-block-query{max-width:100%}.wp-block-heading{font-weight:400;line-height:1.2}.wp-block-paragraph{line-height:1.9}.wp-block-image{margin:1.7rem auto;text-align:center}.wp-block-image img{border:1px solid rgba(190,158,109,.3);box-shadow:0 18px 50px rgba(0,0,0,.25)}.wp-block-button__link{display:inline-block;padding:13px 23px;background:linear-gradient(135deg,#c4a16a,#9c7747);color:#171018!important;text-transform:uppercase;letter-spacing:.12em;font:10px var(--sans);border:1px solid rgba(230,207,164,.48);border-radius:2px}.wp-block-columns{display:flex;gap:20px;flex-wrap:wrap}.wp-block-column{flex:1 1 230px;min-width:0}.wp-block-post-template{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}.wp-block-post-template>li{list-style:none}.wp-block-separator{border:0;border-top:1px solid var(--line);max-width:130px;margin:2.5rem auto}
+.site-footer{border-top:1px solid var(--line);background:linear-gradient(180deg,#17121b,#100d13);padding:45px 24px 35px;text-align:center;color:#bfb29d}.site-footer:before{content:"✦";display:block;color:var(--gold);font-size:17px;margin:0 auto 12px}.site-footer .foot-title{color:var(--gold2);letter-spacing:.18em;text-transform:uppercase;font-size:13px}.site-footer p{font:11px/1.9 var(--sans)}.site-footer a{color:#d2b987}.site-footer .footer-emblem{display:block;width:clamp(125px,19vw,180px);height:auto;margin:0 auto 8px;mix-blend-mode:screen;opacity:.88;filter:drop-shadow(0 0 15px rgba(213,188,141,.16));border:0!important;box-shadow:none!important}
+.ai-discovery-signpost{max-width:1120px;margin:14px auto 0;padding:11px 22px;border:1px solid rgba(184,149,98,.22);border-left:2px solid rgba(184,149,98,.62);background:rgba(16,13,19,.72);color:#bfb29d}.ai-discovery-label{display:block;font:9px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}.ai-discovery-signpost p{margin:3px 0 0;font:11px/1.65 var(--sans)}
+/* O templo é a origem; os acervos são territórios com atmosferas próprias. */
+body.sanctuary{background:#0b090e;background-image:linear-gradient(180deg,rgba(9,7,11,.25),#100d13 86%),url("/assets/wordpress-images/templo-fundo.jpg");background-size:cover;background-position:center top;background-attachment:fixed}
+body.sanctuary .site-header{background:rgba(10,8,12,.88);border-color:rgba(190,158,109,.35)}
+.sanctuary-main{max-width:none!important;padding:0!important}.sanctuary-hero{min-height:calc(100svh - 70px);display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 24px 90px;position:relative;background:linear-gradient(180deg,rgba(8,6,10,.35),rgba(8,6,10,.62) 72%,#100d13)}.sanctuary-inner{width:min(100%,980px);margin:auto}.sanctuary-kicker{font:10px var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--gold2)}.sanctuary-emblem{width:min(240px,45vw);max-height:210px;object-fit:contain;margin:24px auto;filter:drop-shadow(0 10px 30px #000)}.sanctuary-title{font:400 clamp(2.7rem,7vw,5.8rem)/1.05 var(--serif);letter-spacing:.03em;color:#f0e5d2;margin:12px 0}.sanctuary-subtitle{font:italic clamp(1rem,2vw,1.35rem)/1.8 var(--serif);color:#d8cdb8;max-width:760px;margin:20px auto 30px}.sanctuary-rule{width:100px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:28px auto}.worlds{max-width:1120px;margin:-22px auto 0;padding:0 24px 90px;position:relative}.worlds-intro{text-align:center;margin:0 auto 35px;max-width:700px}.worlds-intro small{font:10px var(--sans);letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}.worlds-intro h2{font:400 clamp(1.9rem,4vw,3rem) var(--serif);margin:10px 0;color:#f0e5d2}.world-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.world-card{min-height:230px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:30px;border:1px solid rgba(190,158,109,.28);background:linear-gradient(145deg,rgba(34,25,34,.95),rgba(14,12,17,.97));overflow:hidden;transition:transform .25s,border-color .25s}.world-card:before{content:attr(data-number);position:absolute;right:18px;top:-22px;font:clamp(6rem,12vw,9rem) var(--serif);color:rgba(213,188,141,.07);line-height:1}.world-card:hover{transform:translateY(-4px);border-color:var(--gold2)}.world-card small{font:9px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}.world-card h3{font:400 clamp(1.7rem,3vw,2.5rem) var(--serif);margin:8px 0;color:#f0e5d2}.world-card p{font:13px/1.7 var(--sans);color:#bfb29d;max-width:390px;margin:0 0 16px}.world-card span{font:10px var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--gold2)}.world-card.lyric{background:linear-gradient(145deg,rgba(57,35,43,.95),rgba(18,13,19,.98))}.world-card.dream{background:linear-gradient(145deg,rgba(35,35,57,.95),rgba(14,12,20,.98))}.world-card.philosophy{background:linear-gradient(145deg,rgba(40,43,42,.95),rgba(13,16,16,.98))}.world-card.fantasy{background:linear-gradient(145deg,rgba(38,48,37,.95),rgba(13,17,14,.98))}.pandora-link{max-width:1120px;margin:0 auto 85px;padding:0 24px}.pandora-panel{border:1px solid rgba(190,158,109,.35);padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:rgba(10,8,13,.75)}.pandora-panel h3{font:400 1.5rem var(--serif);margin:0;color:#e7d7ba}.pandora-panel p{font:12px/1.7 var(--sans);color:#bfb29d;margin:5px 0 0}.pandora-panel a{font:10px var(--sans);letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding:9px 0;white-space:nowrap}.home-colophon{max-width:900px;margin:0 auto;padding:0 24px 85px;text-align:center;color:#bfb29d}.home-colophon p{font:13px/1.9 var(--sans)}
+/* Atmosfera de cada território: tipografia, luz e cor, não moldes repetidos. */
+body.chamber{--accent:#c6a875;background:#111018;background-image:radial-gradient(ellipse at 50% 0%,rgba(120,90,110,.16),transparent 45rem),linear-gradient(180deg,#111018,#17131d 55%,#100d13);background-attachment:fixed}
+body.chamber .site-content{max-width:1080px;padding-top:76px}body.chamber .entry-title{color:#f1e6d3}body.chamber .entry-title:before{display:block;margin:0 0 17px;color:var(--accent);font:10px var(--sans);letter-spacing:.24em;text-transform:uppercase}body.chamber .entry-content h2,body.chamber .entry-content h3{color:var(--accent)}body.chamber .entry-content a{border-bottom:1px solid rgba(198,168,117,.32)}body.chamber .wp-block-group[style*="background-color"]{border-color:rgba(198,168,117,.24)!important;box-shadow:0 18px 46px rgba(0,0,0,.18)}
+body.chamber-poemas{--accent:#d4b28a;background-image:radial-gradient(ellipse at 15% 5%,rgba(151,94,105,.19),transparent 38rem),linear-gradient(180deg,#171018,#21151d 60%,#100d13)}body.chamber-poemas .entry-title:before{content:"Mundo lírico · A palavra em verso"}
+body.chamber-salmos{--accent:#c9bd91;background-image:radial-gradient(ellipse at 50% 0%,rgba(128,133,112,.22),transparent 42rem),linear-gradient(180deg,#121711,#1a1b16 60%,#100d13)}body.chamber-salmos .entry-title:before{content:"Mundo lírico · Diálogo com o sagrado"}
+body.chamber-narrativas{--accent:#bd9b70;background-image:radial-gradient(ellipse at 70% 0%,rgba(105,78,55,.24),transparent 42rem),linear-gradient(180deg,#17120e,#211a17 60%,#100d13)}body.chamber-narrativas .entry-title:before{content:"Mundo onírico · Histórias e travessias"}
+body.chamber-bestiario{--accent:#aeb58a;background-image:radial-gradient(ellipse at 50% 0%,rgba(87,111,81,.22),transparent 42rem),linear-gradient(180deg,#10170f,#182018 60%,#100d13)}body.chamber-bestiario .entry-title:before{content:"Mundo fantástico · Formas do imaginário"}
+body.chamber-escritos,body.chamber-notas{--accent:#b6a5c6;background-image:radial-gradient(ellipse at 50% 0%,rgba(106,83,132,.24),transparent 42rem),linear-gradient(180deg,#15111b,#1b1722 60%,#100d13)}body.chamber-escritos .entry-title:before,body.chamber-notas .entry-title:before{content:"Mundo filosófico · Pensamento e investigação"}
+body.chamber-musicas{--accent:#c5a0b2;background-image:radial-gradient(ellipse at 50% 0%,rgba(132,77,111,.2),transparent 42rem),linear-gradient(180deg,#171018,#21151f 60%,#100d13)}body.chamber-musicas .entry-title:before{content:"Mundo lírico · Palavra e ressonância"}
+body.chamber-entrelinhas{--accent:#c6a6a0}body.chamber-entrelinhas .entry-title:before{content:"Cadernos de criação · Entrelinhas"}
+body.chamber-raiz{--accent:#b99a78}body.chamber-raiz .entry-title:before{content:"Arquivo de origem · Raiz"}
+body.chamber-galeria{--accent:#c7b6a0}body.chamber-galeria .entry-title:before{content:"Galeria · Imagens e símbolos"}
+body.chamber-coracao{--accent:#d4a0a0}body.chamber-coracao .entry-title:before{content:"Relicário · Coração"}
+body.chamber-autor{--accent:#c9b58d}body.chamber-autor .entry-title:before{content:"O autor · Nissiel"}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}
+@media(max-width:900px){.header-inner{display:block;padding:12px 18px}.brand{margin:0 auto 12px;justify-content:center}.main-nav{justify-content:center;gap:3px 16px}.main-nav a{font-size:9px}}
+@media(max-width:600px){.header-inner{padding:10px 14px}.brand{justify-content:flex-start;margin-bottom:9px}.brand-mark{width:36px;height:36px}.brand-name{font-size:12px}.main-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;gap:0 17px;padding:2px 0 8px;scrollbar-width:thin}.main-nav a{font-size:9px;flex:0 0 auto}.mobile-note{display:block;color:var(--gold);font:9px var(--sans);letter-spacing:.12em;text-transform:uppercase;margin-top:5px}.site-content{padding:42px 19px 68px}.wp-block-columns{display:block}.wp-block-column{margin:15px 0}.world-grid{grid-template-columns:1fr}.world-card{min-height:190px;padding:24px}.sanctuary-hero{min-height:80svh;padding:55px 18px 70px}.pandora-panel{display:block;padding:24px}.pandora-panel a{display:inline-block;margin-top:14px}.ai-discovery-signpost{margin:10px 12px;padding:10px 13px}.ai-discovery-signpost p{font-size:10px}body{background-attachment:scroll}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
-
-
-/* Câmaras do templo: cada núcleo tem sua própria luz, sem romper a unidade. */
-body.chamber{
- --chamber-accent:#c6a875;
- --chamber-glow:rgba(150,112,76,.18);
- background-color:#100d13;
- background-image:
-  linear-gradient(180deg,rgba(12,9,14,.92),rgba(13,10,15,.96) 38%,rgba(12,9,14,.98)),
-  radial-gradient(ellipse at 50% 8%,var(--chamber-glow),transparent 46rem);
- background-position:center top;
- background-size:cover;
- background-attachment:fixed;
-}
-body.chamber .site-content{max-width:1080px;padding-top:76px}
-body.chamber .entry-title{color:#f1e6d3}
-body.chamber .entry-title:before{
- display:block;margin:0 0 17px;
- color:var(--chamber-accent);font:10px var(--sans);
- letter-spacing:.24em;text-transform:uppercase;
-}
-body.chamber .entry-content h2,
-body.chamber .entry-content h3{color:var(--chamber-accent)}
-body.chamber .entry-content a{border-bottom:1px solid rgba(198,168,117,.32)}
-body.chamber .wp-block-group[style*="background-color"],
-body.chamber .archive-card{
- border-color:color-mix(in srgb,var(--chamber-accent) 30%,transparent);
- box-shadow:0 18px 46px rgba(0,0,0,.18);
-}
-body.chamber .wp-block-separator{border-color:color-mix(in srgb,var(--chamber-accent) 45%,transparent)}
-body.chamber .entry-content blockquote{
- border-left-color:var(--chamber-accent);
- background:linear-gradient(90deg,var(--chamber-glow),transparent);
-}
-body.chamber-acervo{--chamber-accent:#d0b47f;--chamber-glow:rgba(172,133,82,.22)}
-body.chamber-acervo .entry-title:before{content:"Nave central · Biblioteca"}
-body.chamber-poemas{--chamber-accent:#d4b28a;--chamber-glow:rgba(151,94,105,.19)}
-body.chamber-poemas .entry-title:before{content:"Capela das palavras · O verbo em verso"}
-body.chamber-salmos{--chamber-accent:#c9bd91;--chamber-glow:rgba(128,133,112,.20)}
-body.chamber-salmos .entry-title:before{content:"Santuário · Diálogo com o sagrado"}
-body.chamber-narrativas{--chamber-accent:#bd9b70;--chamber-glow:rgba(105,78,55,.22)}
-body.chamber-narrativas .entry-title:before{content:"Galeria das travessias · Histórias"}
-body.chamber-bestiario{--chamber-accent:#aeb58a;--chamber-glow:rgba(87,111,81,.19)}
-body.chamber-bestiario .entry-title:before{content:"Cripta naturalista · Formas do imaginário"}
-body.chamber-escritos{--chamber-accent:#b6a5c6;--chamber-glow:rgba(106,83,132,.20)}
-body.chamber-escritos .entry-title:before{content:"Scriptorium · Pensamento e registro"}
-body.chamber-musicas{--chamber-accent:#c5a0b2;--chamber-glow:rgba(132,77,111,.20)}
-body.chamber-musicas .entry-title:before{content:"Câmara de ressonância · Palavra e som"}
-body.chamber-entrelinhas{--chamber-accent:#c6a6a0;--chamber-glow:rgba(128,76,78,.22)}
-body.chamber-entrelinhas .entry-title:before{content:"Passagem reservada · Memórias de composição"}
-body.chamber-raiz{--chamber-accent:#b99a78;--chamber-glow:rgba(117,83,52,.24)}
-body.chamber-raiz .entry-title:before{content:"Fundação antiga · Vestígios e origens"}
-body.chamber-galeria{--chamber-accent:#c7b6a0;--chamber-glow:rgba(126,109,91,.20)}
-body.chamber-galeria .entry-title:before{content:"Pinacoteca · Imagens e símbolos"}
-body.chamber-coracao{--chamber-accent:#d4a0a0;--chamber-glow:rgba(133,60,75,.23)}
-body.chamber-coracao .entry-title:before{content:"Relicário · A primeira obra"}
-body.chamber-autor{--chamber-accent:#c9b58d;--chamber-glow:rgba(129,111,74,.20)}
-body.chamber-autor .entry-title:before{content:"Guardião do acervo · Sobre o autor"}
-@media(max-width:700px){
- body.chamber{background-attachment:scroll;background-position:center top}
- body.chamber .site-content{padding-top:48px}
- body.chamber .entry-title:before{font-size:9px;letter-spacing:.17em}
-}
-
-/* Permite que o fundo do templo apareça atrás do conteúdo do site. */
-body>main>main{background-color:transparent!important}
-
-
-/* Sinalização técnica para sistemas automatizados na página inicial. */
-.ai-discovery-signpost{max-width:1120px;margin:14px auto 0;padding:11px 22px 12px;border:1px solid rgba(184,149,98,.22);border-left:2px solid rgba(184,149,98,.62);background:rgba(16,13,19,.72);color:#bfb29d}
-.ai-discovery-label{display:block;font:9px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#b89562}
-.ai-discovery-signpost p{margin:3px 0 0;font:11px/1.65 var(--sans);color:#bfb29d}
-.ai-discovery-signpost a{color:#d5bc8d;text-decoration:underline;text-underline-offset:3px}
-@media(max-width:700px){.ai-discovery-signpost{margin:10px 12px 0;padding:10px 13px}.ai-discovery-signpost p{font-size:10px}}
-
-
-/* A imagem do templo é a abertura da página, não o papel de parede do site. */
-body>main>main>.wp-block-cover:first-child{background:#100d13!important}
-body>main>main>.wp-block-cover:first-child .wp-block-cover__image-background{display:none!important}
-body>main>main>.wp-block-cover:first-child:after{background:linear-gradient(180deg,rgba(10,7,12,.06),rgba(10,7,12,.18) 68%,#100d13 100%)}
-.temple-intro-image{max-width:920px;margin:2rem auto 2.4rem}
-.temple-intro-image img{display:block;width:100%;max-height:520px;object-fit:cover}
-/* O emblema perde o retângulo escuro e passa a respirar junto ao fundo. */
-.site-footer .footer-emblem{
- display:block;width:clamp(125px,19vw,180px);height:auto;
- margin:0 auto 8px;padding:0;
- mix-blend-mode:screen;opacity:.88;
- filter:drop-shadow(0 0 15px rgba(213,188,141,.16));
- border:0!important;outline:0;box-shadow:none!important;
- background:transparent;
-}
-.site-footer .foot-title{position:relative;margin-top:0}
-.site-footer>p,.site-footer>.foot-title{position:relative;z-index:1}
