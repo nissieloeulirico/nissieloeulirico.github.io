@@ -109,3 +109,11 @@ body.chamber-autor{--accent:#c9b58d}body.chamber-autor .entry-title:before{conte
   .world-card.lyric,
   .world-card.dream{aspect-ratio:16/9;min-height:0;padding:18px}
 }
+
+/* Camadas de composição dos cartões: fundo ampliado, imagem inteira e texto */
+.world-card.lyric:after,
+.world-card.dream:after{z-index:0}
+.lyric-card-image,.dream-card-image{z-index:1}
+.world-card.lyric:before,.world-card.dream:before{z-index:2}
+.world-card.lyric .world-card-copy,
+.world-card.dream .world-card-copy{z-index:3}
