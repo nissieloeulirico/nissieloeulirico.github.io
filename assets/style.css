@@ -221,7 +221,7 @@ body.chamber.chamber-narrativas .site-content{
 
 
 /* O fundo diurno pertence ao Mundo Lírico, não ao Templo Central. */
-body.chamber.chamber-poemas{
+body.chamber.chamber-mundo-lirico{
   background-color:#171018;
   background-image:
     linear-gradient(180deg,rgba(13,9,15,.18) 0%,rgba(18,11,18,.34) 48%,rgba(16,13,19,.72) 100%),
@@ -231,4 +231,4 @@ body.chamber.chamber-poemas{
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
-@media(max-width:600px){body.chamber.chamber-poemas{background-attachment:scroll}}
+@media(max-width:600px){body.chamber.chamber-mundo-lirico{background-attachment:scroll}}
