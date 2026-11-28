@@ -1275,3 +1275,29 @@ body.sanctuary .temple-portals > .door-relicario{
     width:100% !important;
   }
 }
+
+/* 28 nov. 2026: imagens integrais nas seis fichas do Templo Central.
+   A altura acompanha a proporção original de cada arte, sem recorte nem deformação. */
+body.sanctuary .temple-portals > .temple-door .door-image{
+  display:block !important;
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  overflow:hidden !important;
+  background:#09070c !important;
+}
+body.sanctuary .temple-portals > .temple-door .door-image img{
+  display:block !important;
+  position:static !important;
+  inset:auto !important;
+  width:100% !important;
+  height:auto !important;
+  max-width:100% !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  margin:0 !important;
+  padding:0 !important;
+}
