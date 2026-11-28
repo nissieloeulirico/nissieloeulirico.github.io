@@ -894,3 +894,95 @@ body.sanctuary .temple-door:hover .door-image img{transform:none !important;filt
   }
   body.sanctuary .temple-portals > .door-pandora{width:100% !important}
 }
+
+
+/* Apresentações integradas às portas: preservar integralmente os arquivos de imagem. */
+body.sanctuary .temple-door{
+  overflow:hidden !important;
+  isolation:isolate !important;
+  border:1px solid rgba(213,188,141,.58) !important;
+  box-shadow:0 16px 38px rgba(0,0,0,.42),0 0 0 1px rgba(213,188,141,.08) inset !important;
+}
+body.sanctuary .temple-door .door-image{
+  position:absolute !important;
+  inset:0 !important;
+  z-index:0 !important;
+  width:100% !important;
+  height:100% !important;
+  overflow:hidden !important;
+}
+body.sanctuary .temple-door .door-image img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  transform:none !important;
+  filter:none !important;
+}
+body.sanctuary .temple-door .door-caption{
+  position:absolute !important;
+  inset:auto 0 0 0 !important;
+  z-index:2 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:flex-end !important;
+  gap:clamp(5px,.8vw,9px) !important;
+  width:100% !important;
+  padding:clamp(16px,2.5vw,30px) !important;
+  box-sizing:border-box !important;
+  background:linear-gradient(180deg,rgba(8,6,11,0) 0%,rgba(8,6,11,.42) 24%,rgba(8,6,11,.88) 58%,rgba(8,6,11,.96) 100%) !important;
+  color:#f3e7d4 !important;
+  text-align:left !important;
+  text-shadow:0 2px 9px rgba(0,0,0,.95) !important;
+}
+body.sanctuary .temple-door .door-symbol{
+  color:#e7c990 !important;
+  font-size:clamp(15px,1.5vw,21px) !important;
+  line-height:1 !important;
+}
+body.sanctuary .temple-door .door-caption strong{
+  display:block !important;
+  max-width:100% !important;
+  font:400 clamp(1.25rem,2.35vw,2rem)/1.12 var(--serif) !important;
+  letter-spacing:.015em !important;
+  color:#fff0d8 !important;
+}
+body.sanctuary .temple-door .door-caption p{
+  max-width:58ch !important;
+  margin:0 !important;
+  color:#f0e5d6 !important;
+  font:clamp(11px,.95vw,14px)/1.55 var(--sans) !important;
+}
+body.sanctuary .temple-door .door-action{
+  display:inline-block !important;
+  margin-top:2px !important;
+  padding:0 0 3px !important;
+  border-bottom:1px solid rgba(231,201,144,.72) !important;
+  color:#e7c990 !important;
+  font:9px/1.5 var(--sans) !important;
+  letter-spacing:.17em !important;
+  text-transform:uppercase !important;
+}
+body.sanctuary .temple-door:hover{
+  transform:translateY(-2px) !important;
+  border-color:rgba(240,212,157,.88) !important;
+}
+body.sanctuary .temple-door:hover .door-image img{
+  transform:none !important;
+  filter:none !important;
+}
+@media(max-width:700px){
+  body.sanctuary .temple-door .door-caption{
+    gap:5px !important;
+    padding:clamp(13px,4vw,19px) !important;
+  }
+  body.sanctuary .temple-door .door-caption strong{
+    font-size:clamp(1.2rem,5vw,1.55rem) !important;
+  }
+  body.sanctuary .temple-door .door-caption p{
+    font-size:clamp(10px,2.8vw,12px) !important;
+    line-height:1.42 !important;
+  }
+  body.sanctuary .temple-door .door-action{font-size:8px !important}
+}
