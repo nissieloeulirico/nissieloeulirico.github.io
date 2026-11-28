@@ -772,3 +772,125 @@ body.sanctuary .temple-door:hover{transform:translateY(-3px) !important}
   body.sanctuary .temple-door .door-caption{padding:14px !important;gap:5px !important}
   body.sanctuary .temple-door .door-caption p{font-size:11px !important;line-height:1.45 !important}
 }
+
+
+/* Ajuste definitivo do Templo: fundo acompanha a página e permanece centralizado.
+   As artes dos portais já contêm seus próprios textos; não acrescentar legendas. */
+html:has(body.sanctuary){background:#09070c}
+body.sanctuary{
+  min-height:100vh !important;
+  background-color:#09070c !important;
+  background-image:
+    linear-gradient(rgba(7,5,10,.28),rgba(7,5,10,.42)),
+    url("https://nissieloeulirico.wordpress.com/wp-content/uploads/2026/11/templo-central-fundo-1.png") !important;
+  background-size:100% 100%,contain !important;
+  background-position:center center,center center !important;
+  background-repeat:no-repeat,no-repeat !important;
+  background-attachment:scroll,scroll !important;
+}
+body.sanctuary:before{display:none !important}
+body.sanctuary .sanctuary-main{position:relative;background:transparent !important}
+body.sanctuary .sanctuary-hero{
+  background:linear-gradient(180deg,rgba(7,5,10,.24),rgba(7,5,10,.38)) !important;
+}
+body.sanctuary .world-entry{
+  background:linear-gradient(180deg,rgba(9,7,12,.38),rgba(9,7,12,.28) 55%,rgba(9,7,12,.44)) !important;
+}
+body.sanctuary .site-footer{background:rgba(12,9,15,.48) !important}
+
+/* Cada arquivo de porta é uma ficha ilustrada completa, com texto integrado à própria imagem. */
+body.sanctuary .temple-portals{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  grid-template-areas:
+    "lyric dream"
+    "philosophy fantasy"
+    "pandora pandora" !important;
+  align-items:start !important;
+  gap:clamp(14px,2.2vw,26px) !important;
+  width:min(100%,1180px) !important;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  overflow:visible !important;
+  border:0 !important;
+  background:none !important;
+  box-shadow:none !important;
+}
+body.sanctuary .temple-portals:before{display:none !important;content:none !important}
+body.sanctuary .temple-portals > .door-lyric{grid-area:lyric !important}
+body.sanctuary .temple-portals > .door-dream{grid-area:dream !important}
+body.sanctuary .temple-portals > .door-philosophy{grid-area:philosophy !important}
+body.sanctuary .temple-portals > .door-fantasy{grid-area:fantasy !important}
+body.sanctuary .temple-portals > .door-pandora{
+  grid-area:pandora !important;
+  width:calc(50% - clamp(7px,1.1vw,13px)) !important;
+  justify-self:center !important;
+}
+body.sanctuary .temple-door{
+  display:block !important;
+  position:relative !important;
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  padding:0 !important;
+  overflow:visible !important;
+  border:1px solid rgba(213,188,141,.48) !important;
+  border-radius:2px !important;
+  background:transparent !important;
+  box-shadow:0 12px 30px rgba(0,0,0,.32) !important;
+  isolation:auto !important;
+  transform:none !important;
+}
+body.sanctuary .temple-door .door-image{
+  display:block !important;
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  overflow:visible !important;
+  margin:0 !important;
+  padding:0 !important;
+  background:transparent !important;
+}
+body.sanctuary .temple-door .door-image:after{display:none !important;content:none !important}
+body.sanctuary .temple-door .door-image img{
+  display:block !important;
+  position:static !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  box-shadow:none !important;
+  transform:none !important;
+  filter:none !important;
+}
+body.sanctuary .temple-door .door-caption{display:none !important}
+body.sanctuary .temple-door:after{display:none !important;content:none !important}
+body.sanctuary .temple-door:hover{
+  transform:translateY(-2px) !important;
+  border-color:rgba(240,212,157,.8) !important;
+}
+body.sanctuary .temple-door:hover .door-image img{transform:none !important;filter:none !important}
+@media(max-width:700px){
+  body.sanctuary{
+    background-position:center center,center center !important;
+    background-attachment:scroll,scroll !important;
+  }
+  body.sanctuary .temple-portals{
+    grid-template-columns:minmax(0,1fr) !important;
+    grid-template-areas:"lyric" "dream" "philosophy" "fantasy" "pandora" !important;
+    gap:14px !important;
+  }
+  body.sanctuary .temple-portals > .door-pandora{width:100% !important}
+}
