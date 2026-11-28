@@ -1216,3 +1216,34 @@ body.sanctuary{
     background-attachment:scroll !important;
   }
 }
+
+
+/* CAMADA VISUAL DO FUNDO: aplicada diretamente ao Templo publicado em nissieloeulirico.com.br. */
+html:has(body.sanctuary){background:#09070c !important;}
+body.sanctuary{
+  position:relative !important;
+  isolation:isolate !important;
+  min-height:100vh !important;
+  background:#09070c !important;
+  background-image:none !important;
+}
+body.sanctuary::before{
+  content:"" !important;
+  position:fixed !important;
+  inset:0 !important;
+  z-index:0 !important;
+  display:block !important;
+  pointer-events:none !important;
+  opacity:1 !important;
+  background-image:linear-gradient(rgba(8,6,10,.24),rgba(8,6,10,.42)),url("https://nissieloeulirico.wordpress.com/wp-content/uploads/2026/11/templo-pano-de-fundo.png") !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+body.sanctuary > *{position:relative !important;z-index:1 !important;}
+body.sanctuary .sanctuary-main,
+body.sanctuary .sanctuary-hero,
+body.sanctuary .world-entry{background-color:transparent !important;}
+body.sanctuary .sanctuary-hero{background-image:linear-gradient(180deg,rgba(7,5,10,.18),rgba(7,5,10,.30)) !important;}
+body.sanctuary .world-entry{background-image:linear-gradient(180deg,rgba(9,7,12,.30),rgba(9,7,12,.22) 55%,rgba(9,7,12,.34)) !important;}
+@media(max-width:700px){body.sanctuary::before{background-position:center top !important;}}
