@@ -39,3 +39,73 @@ body.chamber-autor{--accent:#c9b58d}body.chamber-autor .entry-title:before{conte
 .ai-entry p{margin:0;color:var(--muted);font:11px/1.7 var(--sans,Arial,sans-serif);letter-spacing:.025em}
 .ai-entry strong{color:var(--gold);font-weight:600}
 .ai-entry a{color:#e5c994;text-decoration:underline;text-underline-offset:3px}
+
+
+/* Padrao oficial das imagens dos mundos: 16:9, imagem integral e sem moldura preta */
+.world-card.lyric,
+.world-card.dream{
+  aspect-ratio:16/9;
+  width:100%;
+  height:auto;
+  min-height:0;
+  overflow:hidden;
+  position:relative;
+  isolation:isolate;
+}
+.world-card.lyric{
+  background:#211a22;
+}
+.world-card.dream{
+  background:#171724;
+}
+.lyric-card-image,
+.dream-card-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  z-index:0;
+}
+/* Preenche apenas o espaço lateral com a própria imagem desfocada,
+   sem cortar a imagem principal nem deixar faixas negras. */
+.world-card.lyric:after,
+.world-card.dream:after{
+  content:"";
+  position:absolute;
+  inset:-14px;
+  z-index:-1;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  filter:blur(18px) brightness(.48);
+  opacity:.9;
+  pointer-events:none;
+}
+.world-card.lyric:after{
+  background-image:url("https://nissieloeulirico.wordpress.com/wp-content/uploads/2026/11/mundo-lirico-16x9-1.webp");
+}
+.world-card.dream:after{
+  background-image:url("/assets/wordpress-images/56772cbcddaaea3f28dd.png");
+}
+.world-card.lyric .world-card-copy,
+.world-card.dream .world-card-copy{
+  position:relative;
+  z-index:2;
+  max-width:510px;
+  text-shadow:0 2px 12px rgba(0,0,0,.9);
+}
+.world-card.lyric:before,
+.world-card.dream:before{
+  z-index:1;
+}
+.world-card.lyric .world-card-copy{color:#fff0df}
+.world-card.dream .world-card-copy{color:#f1f0fa}
+@media(max-width:600px){
+  .world-card.lyric,
+  .world-card.dream{aspect-ratio:16/9;min-height:0;padding:18px}
+}
