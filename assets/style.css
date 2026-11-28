@@ -218,3 +218,32 @@ body.chamber.chamber-narrativas .site-content{
     background-position:center top !important;
   }
 }
+
+
+/* Atualizacao visual: a imagem diurna do Mundo Lirico tambem conduz ao Templo. */
+body.sanctuary{
+  background-color:#111018;
+  background-image:
+    linear-gradient(180deg,rgba(10,8,12,.10),rgba(10,8,12,.28) 72%,#100d13),
+    url("/assets/images/world-lyrico.webp");
+  background-size:cover;
+  background-position:center top;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+.sanctuary-hero{
+  background:linear-gradient(180deg,rgba(8,6,10,.08),rgba(8,6,10,.24) 72%,#100d13);
+}
+body.chamber.chamber-poemas{
+  background-color:#171018;
+  background-image:
+    linear-gradient(180deg,rgba(13,9,15,.18) 0%,rgba(18,11,18,.34) 48%,rgba(16,13,19,.72) 100%),
+    url("/assets/images/world-lyrico.webp");
+  background-size:cover;
+  background-position:center top;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+@media(max-width:600px){
+  body.sanctuary,body.chamber.chamber-poemas{background-attachment:scroll}
+}
