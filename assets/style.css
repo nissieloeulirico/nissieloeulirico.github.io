@@ -621,3 +621,23 @@ body.sanctuary{
 .temple-door:focus-visible{outline:2px solid #f0d49d;outline-offset:4px}
 .temple-door:after{display:none}
 @media(max-width:700px){.temple-portals{grid-template-columns:1fr;gap:14px}.temple-door:last-child{grid-column:auto;width:100%}.temple-door .door-image{aspect-ratio:16/9}.temple-door .door-caption{padding:17px}.temple-door .door-caption strong{font-size:1.35rem}.temple-door .door-caption p{font-size:12px}}
+
+
+/* Ordem canônica dos cinco portais: identidade, imagem e destino permanecem juntos. */
+.temple-portals{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  grid-template-areas:
+    "lyric dream"
+    "philosophy fantasy"
+    "pandora pandora" !important;
+}
+.temple-portals > .door-lyric{grid-area:lyric !important;order:1}
+.temple-portals > .door-dream{grid-area:dream !important;order:2}
+.temple-portals > .door-philosophy{grid-area:philosophy !important;order:3}
+.temple-portals > .door-fantasy{grid-area:fantasy !important;order:4}
+.temple-portals > .door-pandora{grid-area:pandora !important;order:5;width:calc(50% - clamp(7px,1.1vw,13px)) !important;justify-self:center}
+@media(max-width:700px){
+  .temple-portals{grid-template-columns:minmax(0,1fr) !important;grid-template-areas:"lyric" "dream" "philosophy" "fantasy" "pandora" !important}
+  .temple-portals > .door-pandora{width:100% !important}
+}
