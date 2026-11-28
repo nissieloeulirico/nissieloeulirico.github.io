@@ -197,17 +197,24 @@ body.chamber-poemas{
 }
 
 
-/* Fundo próprio do índice do Acervo Onírico: imagem de apresentação do mundo. */
-body.chamber-narrativas{
-  background-color:#10121c;
+/* Fundo visível do índice do Acervo Onírico. Imagem da própria porta do mundo. */
+body.chamber.chamber-narrativas{
+  --accent:#bdc4d8;
+  background-color:#10121c !important;
   background-image:
-    linear-gradient(180deg,rgba(7,10,18,.72) 0%,rgba(10,13,23,.80) 48%,rgba(10,12,20,.93) 100%),
-    url("/assets/images/world-onirico.webp");
-  background-size:cover;
-  background-position:center top;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
+    linear-gradient(180deg,rgba(7,10,18,.28) 0%,rgba(10,13,23,.42) 48%,rgba(10,12,20,.66) 100%),
+    url("/assets/images/world-onirico.webp") !important;
+  background-size:cover !important;
+  background-position:center top !important;
+  background-repeat:no-repeat !important;
+  background-attachment:fixed !important;
+}
+body.chamber.chamber-narrativas .site-content{
+  background:transparent !important;
 }
 @media(max-width:600px){
-  body.chamber-narrativas{background-attachment:scroll;background-position:center top}
+  body.chamber.chamber-narrativas{
+    background-attachment:scroll !important;
+    background-position:center top !important;
+  }
 }
