@@ -87,7 +87,7 @@ body.chamber-autor{--accent:#c9b58d}body.chamber-autor .entry-title:before{conte
   pointer-events:none;
 }
 .world-card.lyric:after{
-  background-image:url("https://nissieloeulirico.wordpress.com/wp-content/uploads/2026/11/mundo-lirico-16x9-1.webp");
+  background-image:url("/assets/wordpress-images/43d7824de5ac94d107b7.webp");
 }
 .world-card.dream:after{
   background-image:url("/assets/wordpress-images/56772cbcddaaea3f28dd.png");
