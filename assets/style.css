@@ -654,10 +654,3 @@ body.sanctuary{
   background-repeat:no-repeat,no-repeat !important;
   background-attachment:fixed,fixed !important;
 }
-@media(max-width:600px){
-  body.sanctuary{
-    background-attachment:scroll,scroll !important;
-    background-position:center top,center top !important;
-    background-size:cover,contain !important;
-  }
-}
