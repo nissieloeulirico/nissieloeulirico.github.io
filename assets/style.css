@@ -654,3 +654,121 @@ body.sanctuary{
   background-repeat:no-repeat,no-repeat !important;
   background-attachment:fixed,fixed !important;
 }
+
+
+/* CORREÇÃO VISUAL — fundo do templo e portais com imagem integral. */
+html:has(body.sanctuary){background:#09070c}
+body.sanctuary{
+  min-height:100vh !important;
+  background-color:#09070c !important;
+  background-image:url("https://nissieloeulirico.wordpress.com/wp-content/uploads/2026/11/templo-central-fundo-1.png") !important;
+  background-size:contain !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+  background-attachment:fixed !important;
+}
+body.sanctuary:before{
+  content:"" !important;
+  position:fixed !important;
+  inset:0 !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
+  opacity:1 !important;
+  background:linear-gradient(rgba(7,5,10,.28),rgba(7,5,10,.42)) !important;
+}
+body.sanctuary .sanctuary-main{position:relative;background:transparent !important}
+body.sanctuary .sanctuary-hero{
+  background:linear-gradient(180deg,rgba(7,5,10,.32),rgba(7,5,10,.48)) !important;
+}
+body.sanctuary .world-entry{
+  background:linear-gradient(180deg,rgba(9,7,12,.72),rgba(9,7,12,.58) 55%,rgba(9,7,12,.78)) !important;
+}
+body.sanctuary .site-footer{background:rgba(12,9,15,.78) !important}
+
+/* Cada portal é uma porta completa: a arte ocupa o painel e a apresentação fica sobre ela. */
+body.sanctuary .temple-portals:before{display:none !important;content:none !important}
+body.sanctuary .temple-door{
+  position:relative !important;
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:16 / 9 !important;
+  min-height:0 !important;
+  overflow:hidden !important;
+  isolation:isolate;
+  border:1px solid rgba(213,188,141,.52) !important;
+  background:#0a080e !important;
+  box-shadow:0 16px 38px rgba(0,0,0,.42);
+}
+body.sanctuary .temple-door .door-image{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  aspect-ratio:auto !important;
+  overflow:hidden !important;
+  background:#0a080e !important;
+  z-index:-1;
+}
+body.sanctuary .temple-door .door-image:after{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  background:linear-gradient(180deg,rgba(5,4,8,.06) 5%,rgba(5,4,8,.12) 35%,rgba(5,4,8,.88) 100%) !important;
+  pointer-events:none;
+}
+body.sanctuary .temple-door .door-image img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  box-shadow:none !important;
+  transform:none;
+}
+body.sanctuary .temple-door .door-caption{
+  position:absolute !important;
+  inset:auto 0 0 0 !important;
+  z-index:2 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:flex-end !important;
+  gap:7px !important;
+  width:100% !important;
+  min-height:0 !important;
+  padding:clamp(15px,2.4vw,28px) !important;
+  background:linear-gradient(180deg,transparent,rgba(5,4,8,.78) 26%,rgba(5,4,8,.94)) !important;
+  color:#f2e5d1 !important;
+  text-align:left !important;
+  text-shadow:0 2px 8px rgba(0,0,0,.9) !important;
+}
+body.sanctuary .temple-door .door-caption strong{
+  font:400 clamp(1.2rem,2.2vw,1.7rem)/1.2 var(--serif) !important;
+  color:#fff0d7 !important;
+}
+body.sanctuary .temple-door .door-caption p{
+  max-width:62ch !important;
+  margin:0 !important;
+  color:#f0e4d2 !important;
+  font:13px/1.65 var(--sans) !important;
+}
+body.sanctuary .temple-door .door-action{
+  color:#f0d49d !important;
+  border-color:rgba(240,212,157,.72) !important;
+}
+body.sanctuary .temple-door:hover .door-image img{transform:none !important;filter:brightness(1.08)}
+body.sanctuary .temple-door:hover{transform:translateY(-3px) !important}
+@media(max-width:700px){
+  body.sanctuary{background-attachment:scroll !important;background-position:center top !important}
+  body.sanctuary .temple-portals{grid-template-columns:1fr !important}
+  body.sanctuary .temple-door{aspect-ratio:16 / 9 !important;width:100% !important}
+  body.sanctuary .temple-portals > .door-pandora{width:100% !important}
+  body.sanctuary .temple-door .door-caption{padding:14px !important;gap:5px !important}
+  body.sanctuary .temple-door .door-caption p{font-size:11px !important;line-height:1.45 !important}
+}
