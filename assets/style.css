@@ -179,3 +179,19 @@ body.chamber-autor{--accent:#c9b58d}body.chamber-autor .entry-title:before{conte
  .world-card.lyric,.world-card.dream{aspect-ratio:4 / 3;width:100%;max-width:100%;min-height:0;padding:0}
  .world-card.lyric .world-card-copy,.world-card.dream .world-card-copy{padding:14px}
 }
+
+
+/* Fundo próprio do índice do Acervo Lírico: a mesma imagem da porta principal. */
+body.chamber-poemas{
+  background-color:#171018;
+  background-image:
+    linear-gradient(180deg,rgba(13,9,15,.76) 0%,rgba(18,11,18,.82) 48%,rgba(16,13,19,.94) 100%),
+    url("/assets/images/world-lyrico.webp");
+  background-size:cover;
+  background-position:center top;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+@media(max-width:600px){
+  body.chamber-poemas{background-attachment:scroll;background-position:center top}
+}
