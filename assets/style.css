@@ -1247,3 +1247,31 @@ body.sanctuary .world-entry{background-color:transparent !important;}
 body.sanctuary .sanctuary-hero{background-image:linear-gradient(180deg,rgba(7,5,10,.18),rgba(7,5,10,.30)) !important;}
 body.sanctuary .world-entry{background-image:linear-gradient(180deg,rgba(9,7,12,.30),rgba(9,7,12,.22) 55%,rgba(9,7,12,.34)) !important;}
 @media(max-width:700px){body.sanctuary::before{background-position:center top !important;}}
+
+
+/* Sexta porta do Templo: Relicário — Raízes e Ecos. */
+body.sanctuary .temple-portals{
+  grid-template-areas:
+    "lyric dream"
+    "philosophy fantasy"
+    "pandora relicario" !important;
+}
+body.sanctuary .temple-portals > .door-pandora{
+  grid-area:pandora !important;
+  width:100% !important;
+  justify-self:stretch !important;
+}
+body.sanctuary .temple-portals > .door-relicario{
+  grid-area:relicario !important;
+  width:100% !important;
+  justify-self:stretch !important;
+}
+@media(max-width:700px){
+  body.sanctuary .temple-portals{
+    grid-template-areas:"lyric" "dream" "philosophy" "fantasy" "pandora" "relicario" !important;
+  }
+  body.sanctuary .temple-portals > .door-pandora,
+  body.sanctuary .temple-portals > .door-relicario{
+    width:100% !important;
+  }
+}
