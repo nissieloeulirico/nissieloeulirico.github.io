@@ -600,3 +600,24 @@ body.sanctuary{
   .door-caption small{font-size:8px}
   .portal-directory{grid-template-columns:1fr}
 }
+
+
+/* Templo Central: cinco portais independentes, imagens integrais e textos de apresentação. */
+.world-entry{padding:clamp(38px,5vw,72px) clamp(14px,3vw,36px) clamp(50px,7vw,88px)}
+.world-entry-heading{margin-bottom:clamp(26px,4vw,44px)}
+.temple-portals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,2.2vw,26px);width:min(100%,1180px);max-width:1180px;height:auto;aspect-ratio:auto;margin:0 auto;padding:0;overflow:visible;border:0;background:none;box-shadow:none}
+.temple-door{position:relative;inset:auto;display:flex;flex-direction:column;width:100%;max-width:none;height:auto;min-width:0;overflow:hidden;clip-path:none;border:1px solid rgba(213,188,141,.34);background:linear-gradient(180deg,rgba(28,21,30,.96),rgba(12,10,16,.98));filter:none;transform:none;text-decoration:none}
+.temple-door:last-child{grid-column:1/-1;width:calc(50% - clamp(7px,1.1vw,13px));justify-self:center}
+.temple-door .door-image{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#0b0910}
+.temple-door .door-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(9,7,12,.48));pointer-events:none}
+.temple-door .door-image img{display:block;width:100%;height:100%;max-width:none;max-height:none;object-fit:contain;object-position:center;margin:0;padding:0;border:0;box-shadow:none;transition:transform .35s ease}
+.temple-door .door-caption{position:relative;inset:auto;display:flex;flex-direction:column;align-items:flex-start;gap:9px;width:100%;min-height:0;padding:clamp(17px,2.2vw,27px);background:none;color:#e9dfce;text-align:left;text-shadow:none}
+.door-symbol{color:var(--gold2);font-size:19px;line-height:1}
+.temple-door .door-caption strong{display:block;font:400 clamp(1.25rem,2.2vw,1.75rem)/1.2 var(--serif);color:#f2e5d1;letter-spacing:0}
+.temple-door .door-caption p{margin:0;max-width:58ch;color:#c9bdad;font:13px/1.8 var(--sans)}
+.temple-door .door-action{display:inline-block;margin-top:4px;padding-bottom:4px;border-bottom:1px solid rgba(213,188,141,.55);color:#e2c58f;font:9px/1.5 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.temple-door:hover,.temple-door:focus-visible{filter:none;transform:translateY(-3px);border-color:rgba(213,188,141,.75);color:#fff}
+.temple-door:hover .door-image img{transform:scale(1.035);filter:brightness(1.08)}
+.temple-door:focus-visible{outline:2px solid #f0d49d;outline-offset:4px}
+.temple-door:after{display:none}
+@media(max-width:700px){.temple-portals{grid-template-columns:1fr;gap:14px}.temple-door:last-child{grid-column:auto;width:100%}.temple-door .door-image{aspect-ratio:16/9}.temple-door .door-caption{padding:17px}.temple-door .door-caption strong{font-size:1.35rem}.temple-door .door-caption p{font-size:12px}}
