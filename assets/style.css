@@ -488,10 +488,10 @@ body.sanctuary{
   box-shadow:none;
 }
 .door-philosophy{left:9.7%}
-.door-pandora{left:27.1%}
-.door-lyric{left:44.3%}
-.door-dream{left:61.4%}
-.door-fantasy{left:78.5%}
+.door-pandora{left:78.5%}
+.door-lyric{left:27.1%}
+.door-dream{left:44.3%}
+.door-fantasy{left:61.4%}
 .door-caption{
   position:absolute;
   z-index:2;
