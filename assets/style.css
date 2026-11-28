@@ -7,7 +7,7 @@ main{min-height:70vh}.site-content{max-width:1080px;margin:0 auto;padding:65px 3
 .site-footer{border-top:1px solid var(--line);background:linear-gradient(180deg,#17121b,#100d13);padding:45px 24px 35px;text-align:center;color:#bfb29d}.site-footer:before{content:"✦";display:block;color:var(--gold);font-size:17px;margin:0 auto 12px}.site-footer .foot-title{color:var(--gold2);letter-spacing:.18em;text-transform:uppercase;font-size:13px}.site-footer p{font:11px/1.9 var(--sans)}.site-footer a{color:#d2b987}.site-footer .footer-emblem{display:block;width:clamp(125px,19vw,180px);height:auto;margin:0 auto 8px;mix-blend-mode:screen;opacity:.88;filter:drop-shadow(0 0 15px rgba(213,188,141,.16));border:0!important;box-shadow:none!important}
 .ai-discovery-signpost{max-width:1120px;margin:14px auto 0;padding:11px 22px;border:1px solid rgba(184,149,98,.22);border-left:2px solid rgba(184,149,98,.62);background:rgba(16,13,19,.72);color:#bfb29d}.ai-discovery-label{display:block;font:9px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}.ai-discovery-signpost p{margin:3px 0 0;font:11px/1.65 var(--sans)}
 /* O templo é a origem; os acervos são territórios com atmosferas próprias. */
-body.sanctuary{background:#0b090e;background-image:linear-gradient(180deg,rgba(9,7,11,.25),#100d13 86%),url("/assets/images/world-lyrico.webp");background-size:cover;background-position:center top;background-attachment:fixed}
+body.sanctuary{background:#0b090e;background-image:linear-gradient(180deg,rgba(9,7,11,.25),#100d13 86%),url("/assets/wordpress-images/templo-fundo.jpg");background-size:cover;background-position:center top;background-attachment:fixed}
 body.sanctuary .site-header{background:rgba(10,8,12,.88);border-color:rgba(190,158,109,.35)}
 .sanctuary-main{max-width:none!important;padding:0!important}.sanctuary-hero{min-height:calc(100svh - 70px);display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 24px 90px;position:relative;background:linear-gradient(180deg,rgba(8,6,10,.35),rgba(8,6,10,.62) 72%,#100d13)}.sanctuary-inner{width:min(100%,980px);margin:auto}.sanctuary-kicker{font:10px var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--gold2)}.sanctuary-emblem{width:min(240px,45vw);max-height:210px;object-fit:contain;margin:24px auto;filter:drop-shadow(0 10px 30px #000)}.sanctuary-title{font:400 clamp(2.7rem,7vw,5.8rem)/1.05 var(--serif);letter-spacing:.03em;color:#f0e5d2;margin:12px 0}.sanctuary-subtitle{font:italic clamp(1rem,2vw,1.35rem)/1.8 var(--serif);color:#d8cdb8;max-width:760px;margin:20px auto 30px}.sanctuary-rule{width:100px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:28px auto}.worlds{max-width:1120px;margin:-22px auto 0;padding:0 24px 90px;position:relative}.worlds-intro{text-align:center;margin:0 auto 35px;max-width:700px}.worlds-intro small{font:10px var(--sans);letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}.worlds-intro h2{font:400 clamp(1.9rem,4vw,3rem) var(--serif);margin:10px 0;color:#f0e5d2}.world-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.world-card{aspect-ratio:16/9;min-height:0;height:auto}.world-card{min-height:230px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:30px;border:1px solid rgba(190,158,109,.28);background:linear-gradient(145deg,rgba(34,25,34,.95),rgba(14,12,17,.97));overflow:hidden;transition:transform .25s,border-color .25s}.world-card:before{content:attr(data-number);position:absolute;right:18px;top:-22px;font:clamp(6rem,12vw,9rem) var(--serif);color:rgba(213,188,141,.07);line-height:1}.world-card:hover{transform:translateY(-4px);border-color:var(--gold2)}.world-card small{font:9px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}.world-card h3{font:400 clamp(1.7rem,3vw,2.5rem) var(--serif);margin:8px 0;color:#f0e5d2}.world-card p{font:13px/1.7 var(--sans);color:#bfb29d;max-width:390px;margin:0 0 16px}.world-card span{font:10px var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--gold2)}.world-card.lyric{aspect-ratio:16/9;min-height:0;background:linear-gradient(180deg,rgba(13,8,14,.08) 0%,rgba(13,8,14,.18) 34%,rgba(13,8,14,.9) 100%),url("/assets/wordpress-images/9a1f78cafe872eb0c558.png") center 48%/cover no-repeat;border-color:rgba(197,151,111,.55);min-height:340px}.world-card.lyric .world-card-copy{position:relative;z-index:1;max-width:510px;text-shadow:0 2px 12px rgba(0,0,0,.85)}.world-card.lyric small{color:#f1d6ad}.world-card.lyric h3{color:#fff0df}.world-card.lyric p{color:#f0e4d7}.world-card.lyric span{color:#f5d5a6}.world-card.lyric:before{color:rgba(255,225,190,.22);text-shadow:0 3px 20px rgba(0,0,0,.5)}.world-card.dream{aspect-ratio:16/9;min-height:0;background:#080b14;border-color:rgba(145,158,190,.48);min-height:clamp(300px,38vw,440px);position:relative;isolation:isolate}.dream-card-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;background:#080b14;z-index:-1}.world-card.dream:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(180deg,transparent,rgba(5,8,16,.92));z-index:-1;pointer-events:none}.world-card.dream .world-card-copy{position:relative;z-index:1}.world-card.dream .world-card-copy{position:relative;z-index:1;max-width:510px;text-shadow:0 2px 12px rgba(0,0,0,.9)}.world-card.dream small{color:#d8dced}.world-card.dream h3{color:#f1f0fa}.world-card.dream p{color:#e0e1ec}.world-card.dream span{color:#d9d5f0}.world-card.dream:before{color:rgba(220,225,255,.2);text-shadow:0 3px 20px rgba(0,0,0,.6)}.world-card.philosophy{aspect-ratio:16/9;min-height:0;background:linear-gradient(145deg,rgba(40,43,42,.95),rgba(13,16,16,.98))}.world-card.fantasy{aspect-ratio:16/9;min-height:0;background:linear-gradient(145deg,rgba(38,48,37,.95),rgba(13,17,14,.98))}.pandora-link{max-width:1120px;margin:0 auto 85px;padding:0 24px}.pandora-panel{border:1px solid rgba(190,158,109,.35);padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:rgba(10,8,13,.75)}.pandora-panel h3{font:400 1.5rem var(--serif);margin:0;color:#e7d7ba}.pandora-panel p{font:12px/1.7 var(--sans);color:#bfb29d;margin:5px 0 0}.pandora-panel a{font:10px var(--sans);letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding:9px 0;white-space:nowrap}.home-colophon{max-width:900px;margin:0 auto;padding:0 24px 85px;text-align:center;color:#bfb29d}.home-colophon p{font:13px/1.9 var(--sans)}
 /* Atmosfera de cada território: tipografia, luz e cor, não moldes repetidos. */
@@ -220,20 +220,7 @@ body.chamber.chamber-narrativas .site-content{
 }
 
 
-/* Atualizacao visual: a imagem diurna do Mundo Lirico tambem conduz ao Templo. */
-body.sanctuary{
-  background-color:#111018;
-  background-image:
-    linear-gradient(180deg,rgba(10,8,12,.10),rgba(10,8,12,.28) 72%,#100d13),
-    url("/assets/images/world-lyrico.webp");
-  background-size:cover;
-  background-position:center top;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-}
-.sanctuary-hero{
-  background:linear-gradient(180deg,rgba(8,6,10,.08),rgba(8,6,10,.24) 72%,#100d13);
-}
+/* O fundo diurno pertence ao Mundo Lírico, não ao Templo Central. */
 body.chamber.chamber-poemas{
   background-color:#171018;
   background-image:
@@ -244,6 +231,4 @@ body.chamber.chamber-poemas{
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
-@media(max-width:600px){
-  body.sanctuary,body.chamber.chamber-poemas{background-attachment:scroll}
-}
+@media(max-width:600px){body.chamber.chamber-poemas{background-attachment:scroll}}
