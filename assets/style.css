@@ -117,3 +117,65 @@ body.chamber-autor{--accent:#c9b58d}body.chamber-autor .entry-title:before{conte
 .world-card.lyric:before,.world-card.dream:before{z-index:2}
 .world-card.lyric .world-card-copy,
 .world-card.dream .world-card-copy{z-index:3}
+
+
+/* Cartoes dos mundos: proporcao 4:3, encaixe no contêiner e imagem integral */
+.world-grid{width:100%;max-width:100%;min-width:0}
+.world-card.lyric,.world-card.dream{
+  display:block;
+  position:relative;
+  box-sizing:border-box;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  min-height:0;
+  height:auto;
+  aspect-ratio:4 / 3;
+  overflow:hidden;
+  padding:0;
+  isolation:isolate;
+}
+.world-card.lyric:after,.world-card.dream:after{
+  content:"";
+  position:absolute;
+  inset:-16px;
+  z-index:0;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  filter:blur(18px) brightness(.42);
+  pointer-events:none;
+}
+.world-card.lyric:after{background-image:url("/assets/images/world-lyrico.webp")}
+.world-card.dream:after{background-image:url("/assets/images/world-onirico.webp")}
+.lyric-card-image,.dream-card-image{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  margin:0;
+  padding:0;
+  border:0;
+  box-shadow:none;
+}
+.world-card.lyric:before,.world-card.dream:before{z-index:2}
+.world-card.lyric .world-card-copy,.world-card.dream .world-card-copy{
+  position:absolute;
+  z-index:3;
+  inset:auto 0 0;
+  box-sizing:border-box;
+  width:100%;
+  max-width:none;
+  padding:clamp(16px,3vw,30px);
+  color:#fff4e8;
+  text-shadow:0 2px 12px rgba(0,0,0,.95);
+}
+@media(max-width:600px){
+ .world-card.lyric,.world-card.dream{aspect-ratio:4 / 3;width:100%;max-width:100%;min-height:0;padding:0}
+ .world-card.lyric .world-card-copy,.world-card.dream .world-card-copy{padding:14px}
+}
