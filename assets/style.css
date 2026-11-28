@@ -234,3 +234,33 @@ body.chamber.chamber-mundo-lirico{
 @media(max-width:600px){body.chamber.chamber-mundo-lirico{background-attachment:scroll}}
 
 .world-card.lyric .lyric-card-image{width:100%;height:100%;object-fit:cover;object-position:center;}
+
+/* Templo dos mundos: cinco imagens enviadas pelo autor integradas aos cinco arcos. */
+body.sanctuary .worlds{max-width:none;margin:0;padding:76px clamp(14px,3vw,42px) 92px;background:linear-gradient(180deg,rgba(10,8,12,.86),rgba(10,8,12,.68));}
+body.sanctuary .worlds-intro{max-width:760px;margin:0 auto 30px;}
+.temple-portals{position:relative;width:min(100%,1240px);margin:0 auto;border:1px solid rgba(190,158,109,.42);box-shadow:0 24px 80px rgba(0,0,0,.55);overflow:hidden;background:#0b0910;line-height:0;}
+.temple-portals-art{display:block;width:100%;height:auto;aspect-ratio:600/338;object-fit:cover;}
+.portal-hotspot{position:absolute;top:40%;height:45%;width:14.7%;display:flex;align-items:flex-end;justify-content:center;padding:0 2px 1.2%;text-decoration:none!important;outline-offset:-5px;transition:background .2s,filter .2s;}
+.portal-philosophical{left:10.9%}.portal-pandora{left:29.8%}.portal-lyrical{left:48.4%}.portal-oneiric{left:66.9%}.portal-fantastic{left:84.8%;}
+.portal-hotspot:hover,.portal-hotspot:focus-visible{background:linear-gradient(180deg,rgba(230,190,126,.02),rgba(230,190,126,.18));filter:brightness(1.12);outline:1px solid rgba(239,207,154,.85);}
+.portal-label{display:block;max-width:100%;padding:7px 5px 6px;text-align:center;line-height:1.2;background:rgba(12,9,14,.88);border:1px solid rgba(201,165,108,.62);box-shadow:0 4px 16px rgba(0,0,0,.6);color:#f2e4cc;opacity:.96;transition:transform .2s,background .2s;}
+.portal-hotspot:hover .portal-label,.portal-hotspot:focus-visible .portal-label{transform:translateY(-5px);background:rgba(26,17,22,.96);}
+.portal-label strong{display:block;font:600 clamp(8px,.85vw,12px)/1.2 var(--sans);letter-spacing:.06em;color:#f4dfbd;white-space:nowrap;}
+.portal-label small{display:block;margin-top:3px;font:clamp(6px,.62vw,9px)/1.25 var(--sans);color:#d4c4aa;letter-spacing:.015em;}
+.portal-directory{display:none;}
+@media(max-width:700px){
+ body.sanctuary .worlds{padding:54px 12px 65px;}
+ .temple-portals{width:100%;border-left:0;border-right:0;}
+ .portal-hotspot{top:39%;height:43%;padding-bottom:1%;}
+ .portal-label{padding:4px 2px;}
+ .portal-label strong{font-size:7px;white-space:normal;}
+ .portal-label small{display:none;}
+ .portal-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:16px auto 0;max-width:600px;}
+ .portal-directory a{display:flex;flex-direction:column;gap:4px;padding:12px;border:1px solid rgba(190,158,109,.3);background:rgba(15,11,17,.86);}
+ .portal-directory a strong{font:600 11px var(--sans);color:#e8d2ad;}
+ .portal-directory a span{font:10px/1.5 var(--sans);color:#bfb29d;}
+}
+@media(max-width:390px){
+ .portal-label strong{font-size:6px;}
+ .portal-directory{grid-template-columns:1fr;}
+}
