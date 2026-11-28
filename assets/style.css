@@ -986,3 +986,131 @@ body.sanctuary .temple-door:hover .door-image img{
   }
   body.sanctuary .temple-door .door-action{font-size:8px !important}
 }
+
+
+/* CORREÇÃO DEFINITIVA DAS PORTAS DO TEMPLO: imagem no fluxo e apresentação visível. */
+body.sanctuary .temple-portals > .temple-door{
+  display:flex !important;
+  flex-direction:column !important;
+  position:relative !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  overflow:hidden !important;
+  padding:0 !important;
+  background:rgba(13,10,16,.96) !important;
+  border:1px solid rgba(213,188,141,.58) !important;
+  border-radius:3px !important;
+  box-shadow:0 14px 34px rgba(0,0,0,.38) !important;
+  isolation:isolate !important;
+  text-decoration:none !important;
+}
+body.sanctuary .temple-portals > .temple-door .door-image{
+  display:block !important;
+  position:relative !important;
+  inset:auto !important;
+  z-index:0 !important;
+  flex:0 0 auto !important;
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:16 / 9 !important;
+  overflow:hidden !important;
+  margin:0 !important;
+  padding:0 !important;
+  background:#09070c !important;
+}
+body.sanctuary .temple-portals > .temple-door .door-image:after{
+  display:none !important;
+  content:none !important;
+}
+body.sanctuary .temple-portals > .temple-door .door-image img{
+  display:block !important;
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  box-shadow:none !important;
+  transform:none !important;
+  filter:none !important;
+}
+body.sanctuary .temple-portals > .temple-door .door-caption{
+  display:flex !important;
+  position:relative !important;
+  inset:auto !important;
+  z-index:1 !important;
+  flex:1 0 auto !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:flex-start !important;
+  gap:9px !important;
+  width:100% !important;
+  min-height:0 !important;
+  box-sizing:border-box !important;
+  padding:clamp(16px,2.2vw,25px) !important;
+  background:linear-gradient(180deg,#17121b 0%,#0e0b12 100%) !important;
+  color:#f1e7d8 !important;
+  text-align:left !important;
+  text-shadow:none !important;
+}
+body.sanctuary .temple-portals > .temple-door .door-symbol{
+  display:block !important;
+  color:#e7c990 !important;
+  font-size:19px !important;
+  line-height:1 !important;
+}
+body.sanctuary .temple-portals > .temple-door .door-caption strong{
+  display:block !important;
+  color:#fff0d8 !important;
+  font:400 clamp(1.2rem,2.1vw,1.7rem)/1.2 var(--serif) !important;
+  letter-spacing:.01em !important;
+}
+body.sanctuary .temple-portals > .temple-door .door-caption p{
+  display:block !important;
+  max-width:60ch !important;
+  margin:0 !important;
+  color:#d8cdbd !important;
+  font:clamp(12px,.95vw,14px)/1.65 var(--sans) !important;
+}
+body.sanctuary .temple-portals > .temple-door .door-action{
+  display:inline-block !important;
+  margin-top:3px !important;
+  padding-bottom:3px !important;
+  border-bottom:1px solid rgba(231,201,144,.65) !important;
+  color:#e7c990 !important;
+  font:9px/1.5 var(--sans) !important;
+  letter-spacing:.16em !important;
+  text-transform:uppercase !important;
+}
+body.sanctuary .temple-portals > .temple-door:hover{
+  transform:translateY(-2px) !important;
+  border-color:rgba(240,212,157,.88) !important;
+}
+@media(max-width:700px){
+  body.sanctuary .temple-portals{
+    grid-template-columns:minmax(0,1fr) !important;
+    grid-template-areas:"lyric" "dream" "philosophy" "fantasy" "pandora" !important;
+    gap:16px !important;
+  }
+  body.sanctuary .temple-portals > .temple-door{
+    width:100% !important;
+  }
+  body.sanctuary .temple-portals > .temple-door .door-image{
+    aspect-ratio:16 / 9 !important;
+  }
+  body.sanctuary .temple-portals > .temple-door .door-caption{
+    gap:7px !important;
+    padding:16px !important;
+  }
+  body.sanctuary .temple-portals > .temple-door .door-caption p{
+    font-size:12px !important;
+    line-height:1.55 !important;
+  }
+}
