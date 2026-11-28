@@ -30,12 +30,13 @@
 .lyric-return a{display:inline-block;padding:12px 20px;border:1px solid rgba(197,163,111,.38);color:#e0c89f!important;font:10px var(--sans);letter-spacing:.15em;text-transform:uppercase;text-decoration:none}
 @media(max-width:760px){.lyric-paths{grid-template-columns:1fr;max-width:520px}.lyric-path img{height:auto;max-height:360px}.lyric-world{padding:28px 17px 65px}.lyric-hero{padding:8px}}
 
-/* A imagem de apresentação agora permanece como cenário do Mundo Lírico. */
-body.chamber.chamber-poemas{background-color:#171018;background-image:linear-gradient(180deg,rgba(15,10,18,.78),rgba(17,12,20,.86) 48%,rgba(12,9,15,.94)),url("/assets/images/world-lyrico.webp");background-size:cover;background-position:center top;background-repeat:no-repeat;background-attachment:fixed}
-@media(max-width:600px){body.chamber.chamber-poemas{background-attachment:scroll;background-position:center top}}
+/* A imagem da porta permanece como pano de fundo do Mundo Lírico. */
+body.chamber-mundo-lirico{background-color:#171018!important;background-image:linear-gradient(180deg,rgba(15,10,18,.42),rgba(17,12,20,.55) 52%,rgba(12,9,15,.68)),url("/assets/images/world-lyrico.webp")!important;background-size:cover;background-position:center top;background-repeat:no-repeat;background-attachment:fixed}
+@media(max-width:600px){body.chamber-mundo-lirico{background-attachment:scroll;background-position:center top}}
+.lyric-path{background:rgba(20,15,22,.68)}
 </style>
 </head>
-<body class="chamber chamber-poemas">
+<body class="chamber chamber-mundo-lirico">
 <header class="site-header"><div class="header-inner">
 <a class="brand" href="/" aria-label="Voltar ao Templo Central"><span class="brand-mark">✦</span><span><span class="brand-name">Nissiel, O Eulírico</span><br><span class="brand-sub">Universo literário</span></span></a>
 <nav class="main-nav" aria-label="Navegação principal"><a href="/poemas/" aria-current="page">Mundo Lírico</a><a href="/narrativas/">Acervo onírico</a><a href="/escritos/">Acervo filosófico</a><a href="/bestiario/">Acervo fantástico</a><a href="https://github.com/nissieloeulirico/Caixa-De-Pandora" target="_blank" rel="noopener noreferrer">Caixa de Pandora ↗</a></nav>
